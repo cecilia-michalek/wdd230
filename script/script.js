@@ -1,10 +1,30 @@
-const h1 = document.querySelector("h1");
-const copyright = document.querySelector("#copyright")
-
-h1.textContent = "Cecilia Michalek";
-const currentYear = new Date().getFullYear();
-copyright.textContent = `${currentYear}`;
-let quantity = document.querySelector("#q").value;
-
-const oLastModif = document.querySelector("#olastModif")
-let oLastModif = new Date(document.lastModified);
+//Current Date
+const daynames = [
+	"Sunday",
+	"Monday",
+	"Tuesday",
+	"Wednesday",
+	"Thursday",
+	"Friday",
+	"Saturday"
+];
+const months = [
+	"January",
+	"February",
+	"March",
+	"April",
+	"May",
+	"June",
+	"July",
+	"August",
+	"September",
+	"October",
+	"November",
+	"December"
+];
+const d = new Date();
+const dayName = daynames[d.getDay()];
+const monthName = months[d.getMonth()];
+const year = d.getFullYear();
+const fulldate = `${dayName}, ${d.getDate()} ${monthName} ${year}`;
+document.querySelector("#date2").textContent = fulldate;
