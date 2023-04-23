@@ -1,6 +1,11 @@
 //Current Year
-let fullYear = new Date(document.getFullYear)
-document.querySelector("#copyrightYear").textContent = new Date.getFullYear();
+function year() {
+    let d = new Date();
+    let b = d.getFullYear();
+    document.getElementById("copyrightYear").innerHTML = b;
+}
 
-let lastUpdated = new Date(document.lastModified);
-document.querySelector("#lastUpdated").textContent = document.lastUpdated;
+function lastUpdated() {
+    let a = document.lastModified;
+    document.getElementById("lastUpdated").innerHTML = a;
+}
