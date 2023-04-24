@@ -17,7 +17,6 @@ header, footer {
     background-color: rgb(222, 140, 82);
     color:black;
     border: 1px solid #000;
-    box-shadow: #000;
     width: min(95%, 70rem);
 }
 main {
