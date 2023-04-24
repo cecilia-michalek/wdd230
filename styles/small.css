@@ -8,12 +8,23 @@ body{
 header, footer {
     margin: 1rem auto;
     max-width: 760px;
-    border-radius: 5px;
     background-color: rgb(222, 140, 82);
     color:black;
     border: 1px solid #000;
     width: min(95%, 70rem);
 }
+
+h1 {
+    font-size: 2.5rem;
+    margin: .15rem;
+}
+
+h2 {
+    font-size: 1rem;
+    margin: .15rem;
+
+}
+
 main {
 	width: min(95%, 70rem);
     max-width: 760px;
@@ -36,7 +47,6 @@ header {
     grid-row-gap: 10px;
     padding:1rem;
     text-align: center;
-    justify-content: auto;
     align-items: center;
 }
 
@@ -45,9 +55,9 @@ footer {
     text-align: center;
 }
 
-img {
-    box-shadow: 1px 1px 10px black;
-    border-radius: 5%;
+ header img {
+    width: 200px;
+    height: auto;
     margin: 10px 10px 10px 10px;
     border: 1px solid #000;
     justify-items: left;
