@@ -1,7 +1,7 @@
 body {
     font-family: 'Crimson Text', serif;
     font-size: 2rem;
-    background-color: rgb(222, 140, 82);
+    background-color: rgb(179, 149, 28);
     
 }
 
@@ -15,7 +15,7 @@ header, footer {
 main {
     display:grid;
     grid-template-columns: 1fr;
-    font-size: 1rem;
+    font-size: 1.5rem;
     grid-column-gap: 10px;
     justify-content: space-evenly;
     gap: 10px;
@@ -25,8 +25,10 @@ main {
     border: 1px solid #000;
     
 }
-  
-div {
+h3, h4 {
+  font-size: 2rem;
+} 
+section {
     border:5px solid black;
     padding: 10px;
     text-align: center;
@@ -34,7 +36,7 @@ div {
   }
 
 img {
-    border:5px solid rgb(187, 127, 37);
+    border:5px solid rgb(194, 118, 5);
     width: 250px;
     height: auto;
     margin: 5px 5px 5px 5px;
