@@ -1,51 +1,47 @@
 body {
     font-family: 'Crimson Text', serif;
-    font-family: 'Varela Round', sans-serif;
-    font-size: 1rem;
+    font-size: 2rem;
+    background-color: rgb(222, 140, 82);
     
-
 }
+
 header, footer {
     margin: 1rem auto;
     max-width: 760px;
-    background-color: rgb(222, 140, 82);
-    border: 1px solid black;
     text-align: center;
 }
 
-  .grid-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+/*Small or phone size*/
+main {
+    display:grid;
+    grid-template-columns: 1fr;
+    font-size: 1rem;
     grid-column-gap: 10px;
     justify-content: space-evenly;
     gap: 10px;
     padding: 10px;
-    
-
-  }
-  .grid-container > div {
+    background-color: white;
     text-align: center;
     border: 1px solid #000;
+    
+}
   
-  }
-  
-
-  .rule {
+div {
     border:5px solid black;
     padding: 10px;
     text-align: center;
 
   }
-  img {
-    border:5px solid rgb(187, 127, 37)
-    width: 200px;
+
+img {
+    border:5px solid rgb(187, 127, 37);
+    width: 250px;
     height: auto;
-    margin: 10px 10px 10px 10px;
-    border: 1px solid #000;
+    margin: 5px 5px 5px 5px;
     justify-items: left;
   }
 
-  footer {
+footer {
     font-size: 2rem;
     padding: 20px;
   }

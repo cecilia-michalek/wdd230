@@ -1,0 +1,23 @@
+
+/* Medium or tablet size*/
+@media only screen and (min-width: 37.5em) {
+    main {
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 10px;
+    }
+    .rule3 {
+        grid-column: span 2;
+      }
+    
+  }
+
+  /* Large or desktop*/
+@media only screen and (min-width: 60em) {
+    main {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .rule3 {
+        grid-column: span 1;
+      }
+}
+    
