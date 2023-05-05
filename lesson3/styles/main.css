@@ -95,9 +95,18 @@ footer {
     background-color: rgb(13, 114, 122);
     color:white;
 }
+
+html {
+    font-size: calc(0.75rem + 1.5vw);
+  }
+main{
+    max-inline-size: 66ch;
+      
+}
+
  /*Media queries for larger views*/
 
-@media (min-width: 600px) {
+@media (min-width: 400px) {
 	nav {
 		flex-direction: row;
 	}

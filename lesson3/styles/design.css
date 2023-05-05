@@ -73,8 +73,6 @@ nav a:hover {
 }
 
 main {
-	display: grid;
-	grid-template-columns:1fr 1fr;
 	align-items: center;
 	justify-content: center;
 	font-size: 0.85rem;
@@ -82,6 +80,7 @@ main {
 }
 table {
     display: table;
+    table-layout: auto;
     border-collapse: separate;
     border-spacing: 2px;
     text-align: center;
