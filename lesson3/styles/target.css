@@ -1,5 +1,5 @@
 /* used to select all items in an HTML file. */
-  * {
+* {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
@@ -17,6 +17,7 @@ header {
 	align-items: center;
 	justify-content: center;
 	padding: 10px;
+    width:20%;
 }
 
 header,
@@ -73,16 +74,20 @@ nav a:hover {
 
 main {
 	display: grid;
-	grid-template-columns: 1fr 1fr;
+	grid-template-columns: 1fr;
 	align-items: center;
 	justify-content: center;
 	font-size: 0.85rem;
     background-color: #eee;
+    width:60%;
 }
 
 main .content {
 	margin: 1rem;
 	padding: 1rem;
+
+}
+.persona {
 
 }
 
@@ -94,6 +99,7 @@ footer {
 	font-weight: 400;
     background-color: rgb(13, 114, 122);
     color:white;
+    width:20%;
 }
  /*Media queries for larger views*/
 

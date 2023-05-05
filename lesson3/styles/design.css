@@ -1,15 +1,14 @@
-/* used to select all items in an HTML file. */
-  * {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-body {
-	font-size: 16px;
-	font-family: 'Varela Round', sans-serif;
-}
+ body {
+    font-size: 16px;
+    font-family: 'Varela Round', sans-serif;
+ }
 
-header {
+ header {
 	background-color: rgb(13, 114, 122);
 	display: flex;
 	flex-flow: column;
@@ -19,12 +18,9 @@ header {
 	padding: 10px;
 }
 
-header,
-nav,
-main,
-footer {
-	max-width: 960px;
-	margin: 0 auto;
+header, nav, main, footer {
+    max-width: 960px;
+    margin: 0 auto;
 }
 
 h1 {
@@ -39,6 +35,11 @@ h2 {
 
 p {
 	padding: .5rem;
+}
+.ColoredParagraph {
+    background-color: #233D4D;
+    color:white;
+
 }
 h3 {
     padding: .5rem;
@@ -73,18 +74,48 @@ nav a:hover {
 
 main {
 	display: grid;
-	grid-template-columns: 1fr 1fr;
+	grid-template-columns:1fr 1fr;
 	align-items: center;
 	justify-content: center;
 	font-size: 0.85rem;
     background-color: #eee;
 }
-
-main .content {
-	margin: 1rem;
-	padding: 1rem;
-
+table {
+    display: table;
+    border-collapse: separate;
+    border-spacing: 2px;
+    text-align: center;
 }
+
+.Primary {
+    background-color: #233D4D;
+    margin: 10px;
+    padding: 20px;
+    color: white
+}
+
+.Secondary {
+    background-color: #FE7F2D;
+    margin: 10px;
+    padding: 20px;
+    color: white
+}
+
+.Accent1 {
+    background-color: #FCCA46;
+    margin: 10px;
+    padding: 20px;
+    color: white
+}
+
+.Accent2 {
+    background-color: #619B8A;
+    margin: 10px;
+    padding: 20px;
+    color: white
+}
+
+
 
 footer {
 	display: flex;
@@ -95,9 +126,10 @@ footer {
     background-color: rgb(13, 114, 122);
     color:white;
 }
+
  /*Media queries for larger views*/
 
-@media (min-width: 600px) {
+ @media (min-width: 600px) {
 	nav {
 		flex-direction: row;
 	}
