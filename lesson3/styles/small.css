@@ -1,0 +1,379 @@
+/* used to select all items in an HTML file. */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	font-size: 16px;
+	font-family: 'Varela Round', sans-serif;
+}
+
+header {
+	background-color: rgb(13, 114, 122);
+	display: flex;
+	flex-flow: column;
+    color:white;
+	align-items: center;
+	justify-content: center;
+	padding: 10px;
+}
+
+header,
+nav,
+main,
+footer {
+	max-width: 960px;
+	margin: 0 auto;
+}
+
+h1 {
+	font-size: 2rem;
+    text-align: center;
+}
+h2 {
+	padding: .5rem;
+    font-weight: 900;
+	color: rgb(13, 114, 122);
+}
+
+p {
+	padding: .5rem;
+}
+h3 {
+    padding: .5rem;
+	color: rgb(13, 114, 122);
+}
+
+nav {
+	background-color: #092f49;
+	text-align: center;
+	box-shadow: 0 0 30px #333;
+	display: flex;
+	flex-direction: column;
+}
+
+nav div {
+	flex: 1 1 auto;
+}
+
+nav a {
+	display: block;
+	color: #dfc21e;
+	text-align: center;
+	padding: 15px;
+	text-decoration: none;
+	font-size: 0.9rem;
+}
+
+nav a:hover {
+	background-color: rgb(13, 114, 122);;
+	color: white;
+}
+
+main {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	align-items: center;
+	justify-content: center;
+	font-size: 0.85rem;
+    background-color: #eee;
+}
+
+main .content {
+	margin: 1rem;
+	padding: 1rem;
+
+}
+
+footer {
+	display: flex;
+    flex-wrap: wrap;
+	padding: 1rem;
+	justify-content: center;
+	font-weight: 400;
+    background-color: rgb(13, 114, 122);
+    color:white;
+}
+
+html {
+    font-size: calc(0.75rem + 1.5vw);
+  }
+main{
+    max-inline-size: 66ch;
+      
+}
+
+ /*Media queries for larger views*/
+
+@media (min-width: 400px) {
+	nav {
+		flex-direction: row;
+	}
+	
+	nav a {
+		font-size: 1.1rem;
+	}
+	main {
+		grid-template-columns: 1fr;
+	}
+}
+
+@media (min-width: 768px) {
+	nav a {
+		font-size: 1.3rem;
+	}
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ body {
+    font-size: 16px;
+    font-family: 'Varela Round', sans-serif;
+ }
+
+ header {
+	background-color: rgb(13, 114, 122);
+	display: flex;
+	flex-flow: column;
+    color:white;
+	align-items: center;
+	justify-content: center;
+	padding: 10px;
+}
+
+header, nav, main, footer {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+h1 {
+	font-size: 2rem;
+    text-align: center;
+}
+h2 {
+	padding: .5rem;
+    font-weight: 900;
+	color: rgb(13, 114, 122);
+}
+
+p {
+	padding: .5rem;
+}
+.ColoredParagraph {
+    background-color: #233D4D;
+    color:white;
+
+}
+h3 {
+    padding: .5rem;
+	color: rgb(13, 114, 122);
+}
+
+nav {
+	background-color: #092f49;
+	text-align: center;
+	box-shadow: 0 0 30px #333;
+	display: flex;
+	flex-direction: column;
+}
+
+nav div {
+	flex: 1 1 auto;
+}
+
+nav a {
+	display: block;
+	color: #dfc21e;
+	text-align: center;
+	padding: 15px;
+	text-decoration: none;
+	font-size: 0.9rem;
+}
+
+nav a:hover {
+	background-color: rgb(13, 114, 122);;
+	color: white;
+}
+
+main {
+	align-items: center;
+	justify-content: center;
+	font-size: 0.85rem;
+    background-color: #eee;
+}
+table {
+    display: table;
+    table-layout: auto;
+    border-collapse: separate;
+    border-spacing: 2px;
+    text-align: center;
+}
+
+.Primary {
+    background-color: #233D4D;
+    margin: 10px;
+    padding: 20px;
+    color: white
+}
+
+.Secondary {
+    background-color: #FE7F2D;
+    margin: 10px;
+    padding: 20px;
+    color: white
+}
+
+.Accent1 {
+    background-color: #FCCA46;
+    margin: 10px;
+    padding: 20px;
+    color: white
+}
+
+.Accent2 {
+    background-color: #619B8A;
+    margin: 10px;
+    padding: 20px;
+    color: white
+}
+
+
+
+footer {
+	display: flex;
+    flex-wrap: wrap;
+	padding: 1rem;
+	justify-content: center;
+	font-weight: 400;
+    background-color: rgb(13, 114, 122);
+    color:white;
+}
+
+ /*Media queries for larger views*/
+
+ @media (min-width: 600px) {
+	nav {
+		flex-direction: row;
+	}
+	
+	nav a {
+		font-size: 1.1rem;
+	}
+	main {
+		grid-template-columns: 1fr;
+	}
+}
+
+@media (min-width: 768px) {
+	nav a {
+		font-size: 1.3rem;
+	}
+}
+
+/* used to select all items in an HTML file. */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	font-size: 16px;
+	font-family: 'Varela Round', sans-serif;
+}
+
+header {
+	background-color: rgb(13, 114, 122);
+	display: flex;
+	flex-flow: column;
+    color:white;
+	align-items: center;
+	justify-content: center;
+	padding: 10px;
+    width:20%;
+}
+
+header,
+nav,
+main,
+footer {
+	max-width: 960px;
+	margin: 0 auto;
+}
+
+h1 {
+	font-size: 2rem;
+    text-align: center;
+}
+h2 {
+	padding: .5rem;
+    font-weight: 900;
+	color: rgb(13, 114, 122);
+}
+
+p {
+	padding: .5rem;
+}
+h3 {
+    padding: .5rem;
+	color: rgb(13, 114, 122);
+}
+
+nav {
+	background-color: #092f49;
+	text-align: center;
+	box-shadow: 0 0 30px #333;
+	display: flex;
+	flex-direction: column;
+}
+
+nav div {
+	flex: 1 1 auto;
+}
+
+nav a {
+	display: block;
+	color: #dfc21e;
+	text-align: center;
+	padding: 15px;
+	text-decoration: none;
+	font-size: 0.9rem;
+}
+
+nav a:hover {
+	background-color: rgb(13, 114, 122);;
+	color: white;
+}
+
+main {
+	display: grid;
+	grid-template-columns: 1fr;
+	align-items: center;
+	justify-content: center;
+	font-size: 0.85rem;
+    background-color: #eee;
+    width:60%;
+}
+
+main .content {
+	margin: 1rem;
+	padding: 1rem;
+
+}
+.persona {
+
+}
+
+footer {
+	display: flex;
+    flex-wrap: wrap;
+	padding: 1rem;
+	justify-content: center;
+	font-weight: 400;
+    background-color: rgb(13, 114, 122);
+    color:white;
+    width:20%;
+}
