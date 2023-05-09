@@ -71,11 +71,6 @@ main {
     background-color: #eee;
 }
 
-main{
-    max-inline-size: 66ch;
-      
-}
-
 main .content {
 	margin: 1rem;
 	padding: 1rem;
@@ -126,6 +121,10 @@ table {
     border-collapse: separate;
     border-spacing: 2px;
     text-align: center;
+}
+table tr {
+    display: flex;
+    flex-direction: column;
 }
 
 .Primary {
@@ -184,15 +183,18 @@ nav a:hover {
 	color: white;
 }
 
-.persona {
+#personas {
+    display:flex;
+    flex-direction: column;
+
+
 
 }
 
 footer {
-	display: flex;
-    flex-wrap: wrap;
 	padding: 1rem;
 	justify-content: center;
+    text-align: center;
 	font-weight: 400;
     background-color: rgb(13, 114, 122);
     color:white;
