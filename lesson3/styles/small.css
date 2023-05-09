@@ -115,16 +115,12 @@ nav a:hover {
 	color: white;
 }
 
-table {
-    display: table;
-    table-layout: auto;
+.colors {
+    display: flex;
+    flex-wrap: wrap;
     border-collapse: separate;
     border-spacing: 2px;
     text-align: center;
-}
-table tr {
-    display: flex;
-    flex-direction: column;
 }
 
 .Primary {
