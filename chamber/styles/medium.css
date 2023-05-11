@@ -1,0 +1,56 @@
+@media screen and (min-width: 35rem) {
+    #hamButton { display: none; }
+    nav ul #responsive {
+        display: flex;
+        margin-left: 2vw;
+        border-left: 1px solid black;
+    }
+    nav li {
+        display:block;
+        flex: 1 1 100%;
+
+    }
+
+    .navigation {
+		flex-direction: row;
+	}
+
+    nav ul li a {
+        border: none;
+        border-right: 1px solid black;
+        color: yellow;
+    }
+    #content {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        grid-template-areas: 
+        'hero hero hero'
+        'news news news'
+        'spotlight spotlight spotlight'
+        'join join join'
+        'event event weather';
+
+    }
+    .event {
+        grid-area: event;
+    }
+    .hero {
+        grid-area: hero;
+    }
+    
+    .weather {
+        grid-area: weather;
+    }
+    
+    .news {
+        grid-area: news;
+    }
+    #content .spotlight {
+        grid-area: spotlight;
+    }
+    #content .join {
+        display: block;
+        grid-area: join;
+    }
+}
