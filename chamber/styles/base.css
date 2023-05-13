@@ -1,6 +1,6 @@
 body {
 	max-width: 960px;
-    margin: 0;
+    margin: 0 auto;
 	padding: 0;
 	font-size: 16px;
 	font-family: 'Varela Round', sans-serif;
@@ -11,12 +11,15 @@ body {
 
 header {
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
 	background-color: rgb(13, 114, 122);
 	color:white;
 	align-items: left;
 	justify-content: left;
 	padding: 20px;
+}
+.logo {
+	display:flex;
 }
 
 #date2 {
@@ -54,7 +57,7 @@ nav {
 #hamButton {
 	display: block;
 	position: absolute;
-	top: 10px;
+	top: 75px;
 	right: 10px;
 	width: fit-content;
 	font-size: 1.5rem;
@@ -67,6 +70,10 @@ nav {
 	list-style: none;
 	background-color: #FE7F2D;
 	
+}
+ul {
+	margin-block-start: 0;
+	padding-inline-start: 0;
 }
 .navigation li {
 	display: none;
@@ -85,11 +92,11 @@ nav {
 }
 
 /* when the button is clicked - the responsive class is added and accounted for here */
-.navigation.responsive li {
+.navigation .responsive li {
 	display: block;
 	width: 100%;
 }
-.navigation.responsive li a {
+.navigation .responsive li a {
 	display: block;
 }
 
@@ -98,8 +105,8 @@ nav {
 
 #content {
 	display: grid;
-	grid-template-columns: repeat(2, 1fr);
-	grid-template-rows: repeat(6, 1fr);
+	grid-template-columns: 1fr;
+	grid-template-rows: repeat(5, 1fr);
 	grid-template-areas: 
 	'hero hero'
 	'event event'
@@ -126,8 +133,19 @@ nav {
 #content .news {
 	grid-area: news;
 }
-#content .spotlight {
+.spotlight {
+	display: flex;
+	flex-direction: column;
+	
+}
+#content .spot1 .spot2 {
 	grid-area: spotlight;
+	width: 100%;
+	margin: 200px;
+	
+}
+#content .spot3 {
+	display: none;
 }
 #content .join {
 
@@ -135,7 +153,6 @@ nav {
 }
 
 #content div {
-	align-items: center;
 	justify-content: center;
 	background-color: #bbb;
 	border:5px solid rgb(13, 114, 122);
@@ -151,4 +168,17 @@ footer {
 	font-weight: 400;
     background-color: rgb(13, 114, 122);
     color:white;
+}
+footer img {
+	width: 8rem;
+	height: auto;
+
+}
+footer a {
+	font-size: 1.5rem;
+	color:#FE7F2D;
+	text-decoration: none;
+}
+footer a:hover {
+	color: white;
 }

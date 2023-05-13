@@ -1,4 +1,4 @@
-@media only screen and (mid-width: 64rem) {
+@media screen and (min-width: 60rem) {
     header img {
         width: 80%;
     }
@@ -19,7 +19,6 @@
         'weather hero hero spotlight'
         'join news news spotlight';
         grid-gap: 20px;
-        max-width: 960px;
         margin: 5px;
         
     }
@@ -38,7 +37,22 @@
         grid-area: news;
     }
     #content .spotlight {
+        flex-direction: column;
+    }
+    #content .spot1 {
         grid-area: spotlight;
+        width:80%;
+    }
+
+    #content .spot2 {
+        grid-area: spotlight;
+        width:80%;
+    }
+
+    #content .spot3 {
+        display: block;
+        grid-area: spotlight;
+        width:80%;
     }
     #content .join {
         grid-area: join;
