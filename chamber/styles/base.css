@@ -1,4 +1,5 @@
 body {
+	max-width: 960px;
     margin: 0;
 	padding: 0;
 	font-size: 16px;
@@ -6,23 +7,24 @@ body {
     box-sizing: border-box;
 }
 
+/*-------header-------*/
+
 header {
 	display: flex;
 	flex-direction: row;
 	background-color: rgb(13, 114, 122);
 	color:white;
 	align-items: left;
-	justify-content: center;
+	justify-content: left;
 	padding: 20px;
-
 }
+
 #date2 {
 	display: block;
 }
 
-h1, img {
-
-	width: 50%;
+picture img {
+	width: 8rem;
 	height: auto;
 
 }
@@ -31,22 +33,24 @@ h1, img {
 	top: 10px;
 	right: 10px;
 	width: fit-content;
-	font-size: 1.5rem;
+	font-size: 1rem;
 	padding: .5rem;
 }
 .social {
 	display: flex;
 }
 .social svg {
-	width: 42px;
+	width: 32px;
 	height: auto;
 }
 
+/*-------nav-------*/
 nav {
 	max-width: 700px;
 	margin: 10px auto;
 }
 
+/* small view navigation */
 #hamButton {
 	display: block;
 	position: absolute;
@@ -55,54 +59,42 @@ nav {
 	width: fit-content;
 	font-size: 1.5rem;
 	padding: .5rem;
-	color: white;
-	margin: .2rem 2vw;
-	background: transparent;
-	font-size: 2rem;
-	border: none;
+	color: rgb(13, 114, 122);
 }
-
 .navigation {
 	display: flex;
 	flex-direction: column;
-	text-decoration: none;
 	list-style: none;
-	background-color: #619B8A;
+	background-color: #FE7F2D;
+	
 }
-
 .navigation li {
-	display:none;
-	list-style-type: none;
-	padding:0;
-	margin: 0;
+	display: none;
 }
-
 .navigation li a {
-	padding: 1.15rem 2vw;
+	padding: 1.15rem;
 	display: block;
-	text-align: right;
+	text-align: center;
 	text-decoration: none;
-	color: #fff;
-	border-top: 1px solid rgba(13, 114, 122, 0.3);
-	background-color: #bbb;
+	color:#333;
 }
 .navigation li a:hover {
-	background-color:rgb(13, 114, 122, o.5);
-	color: white;
+	background-color:#FCCA46;
+	color: #333;
 	font-weight: 700;
+}
 
-}
-.responsive li {
-	display:block;
-}
-.navigation .responsive li {
+/* when the button is clicked - the responsive class is added and accounted for here */
+.navigation.responsive li {
 	display: block;
 	width: 100%;
 }
-.navigation .responsive li a {
+.navigation.responsive li a {
 	display: block;
 }
 
+
+/*-------main--------*/
 
 #content {
 	display: grid;
@@ -118,8 +110,8 @@ nav {
 	grid-gap: 10px;
 	max-width: 960px;
 	margin: 5px;
-	
 }
+
 #content .event {
 	grid-area: event;
 }
@@ -150,6 +142,7 @@ nav {
 	padding: 10px;
 }
 
+/*-------footer------------*/
 
 footer {
 	padding: 1rem;
