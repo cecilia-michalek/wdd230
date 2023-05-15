@@ -41,6 +41,7 @@ picture img {
 }
 .social {
 	display: flex;
+	gap: 10px;
 }
 .social svg {
 	width: 32px;
@@ -92,11 +93,11 @@ ul {
 }
 
 /* when the button is clicked - the responsive class is added and accounted for here */
-.navigation .responsive li {
+.responsive li {
 	display: block;
 	width: 100%;
 }
-.navigation .responsive li a {
+.responsive li a {
 	display: block;
 }
 
@@ -106,14 +107,13 @@ ul {
 #content {
 	display: grid;
 	grid-template-columns: 1fr;
-	grid-template-rows: repeat(5, 1fr);
 	grid-template-areas: 
-	'hero hero'
-	'event event'
-	'weather weather'
-	'news news'
-	'spotlight spotlight'
-	'spotlight spotlight';
+	'hero'
+	'event'
+	'weather'
+	'news'
+	'spotlight'
+	'spotlight';
 	grid-gap: 10px;
 	max-width: 960px;
 	margin: 5px;
@@ -176,7 +176,7 @@ footer img {
 }
 footer a {
 	font-size: 1.5rem;
-	color:#FE7F2D;
+	color:#16065c;
 	text-decoration: none;
 }
 footer a:hover {
