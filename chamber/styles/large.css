@@ -10,18 +10,20 @@
         justify-content: center;
 
     }
+
     #content {
         grid-template-areas: 
         'event hero hero spotlight'
         'weather hero hero spotlight'
         'join news news spotlight';
         grid-gap: 20px;
-        margin: 5px;
-        
+        margin: 5px;    
     }
+
     #content .event {
         grid-area: event;
     }
+    
     #content .hero  {
         grid-area: hero;
     }

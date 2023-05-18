@@ -118,17 +118,60 @@ ul {
 	max-width: 960px;
 	margin: 5px;
 }
-.hero img{
+#content img{
 	width: 100%;
 	height: auto;
 }
-.hero {
+#content .hero {
 	margin: 10px auto;
 	position: relative;
 
 }
+
+#content .hero img {
+	position: relative;
+	background-size: cover;
+}
+
+.hero h2 {
+	position: absolute;
+	top: 20px;
+	left: 50px;
+	
+}
+.sun {
+	color:#FCCA46;
+	font-size: 80px;
+}
+#joinbutton {
+	position: absolute;
+	top: 230px;
+	left: 300px;
+	border-radius: 25px;
+  	background: #FCCA46;
+  	padding: 20px;
+	
+}
+#joinbutton a {
+	text-decoration: none;
+	color:#16065c;
+	text-align: center;
+	font-weight: 800;
+	
+}
+
 #content .event {
 	grid-area: event;
+	text-align: center;
+	padding: 10px;
+
+}
+#content .event h2 {
+	color:#FCCA46;
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+#content .event a {
+	text-decoration: none;
 }
 #content .hero {
 	grid-area: hero;
@@ -136,10 +179,12 @@ ul {
 
 #content .weather {
 	grid-area: weather;
+	text-align: center;
 }
 
 #content .news {
 	grid-area: news;
+	text-align: center;
 }
 .spotlight {
 	display: flex;
@@ -156,14 +201,12 @@ ul {
 	display: none;
 }
 #content .join {
-
 	display: none;
 }
 
 #content div {
-	justify-content: center;
 	background-color: #bbb;
-	border:5px solid rgb(13, 114, 122);
+	border: 2px solid rgb(13, 114, 122);
 	padding: 10px;
 }
 
