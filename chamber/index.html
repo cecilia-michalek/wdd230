@@ -8,14 +8,20 @@
     <title>Saratoga Springs Chamber of Commerce, where busineses thrive together.</title>
     <link rel="icon" href="favicon.ico">
     <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/medium.css">
-    <link rel="stylesheet" href="styles/large.css">
+    <link rel="stylesheet" href="styles/large1.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
 </head>
 <body>
+    <div class="banner">
+            <div class="banner-text">🤝🏼 <strong>Come join us</strong> for the chamber meet and greet Wednesday at 7:00 p.m.</div>
+            <button class="banner-close" type="button">
+                <span class="material-icon">close</span>
+            </button>
+    </div>
     <header>
         <div class="logo">
         <picture>
@@ -49,51 +55,49 @@
             </nav></div>
 
     </header>
-    <main id="content">
+    <main class="content">
         <div class="hero">
-            <img src="images/saratoga-springs-1.jpg" alt="Picture of the Utah Lake." width="100%" height="100%">
-            <h2>Welcome to Saragoga Springs</h2>
-            <button id="joinbutton"><a href="#">JOIN THE CHAMBER</a></button>
+            <div class="heroImage"><img src="images/saratoga-springs-1.jpg" alt="Picture of the Utah Lake." width="100%" height="100%"></div>
+            <h2 class="hero-h2">Welcome to Saratoga Springs</h2>
+            <section class="heroJoin">   
+                <a href="#">JOIN THE CHAMBER</a>
+            </section>
         </div>
         <div class="event">
-            <h2>Ribbon Cutting</h2>
+            <h2 class="h2headings">Ribbon Cutting</h2>
             <h3>The Diamond Shack</h3>
             <p>Join us for the grand opening of The Diamond Shack, Thursday at 1:00pm.<a href="#" > more info...</a></p>
             </div>
         <div class="weather">
-            <h2>Weather</h2>
+            <h2 class="h2headings">Weather</h2>
             <i class='sun'>&#x1F324;</i>
-            <h3>Mostly sunny skies</h3>
+            <h2>Mostly Sunny Skies</h3>
             <h3>Temperature: 75 degrees</h3>
         </div>
         <div class="news">
-            <h2>News Release</h2>
+            <h2 class="h2headings">News Release</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia similique magni rem quaerat, cum repudiandae? Recusandae, impedit. Aliquid natus assumenda unde dolore fuga a at laborum! Culpa labore possimus sequi.</p>
         </div>
         <div class="join">
-            <h2>Join Us!</h2>
+            <a id="join2" href="#">JOIN US!</a>
             <p>Discover how to join the chamber of commerce and how it will benefit your organization!</p>
         </div>
         <div class="spotlight">
-            <div class="spot1"><h2>In need of a dumpster?</h2>
-                <img src="images/DumpTruck.jpg" alt="Dump truck" width="20rem" height="20rem">
+            <div class="spot1"><h2 class="h2headings">In need of a dumpster?</h2>
+                <img src="images/DumpTruck.jpg" alt="Dump truck" width="250rem" height="150">
             <h3>We got you covered!</h3>
             <h3>Call us: 999-999-9999</h3>
             <h3>DumpsterOnWheels@facebook</h3>
         </div>
-            <div class="spot2"><h2>Code School</h2>
-            <img src="images/Laptop-clip-art-free-clipart-images-image-clipartcow-4.jpg" alt="cartuned pink laptop." width="15rem" height="15rem">
+            <div class="spot2"><h2 class="h2headings">Code School</h2>
+            <img src="images/laptopImage.png" alt="Cartuned laptop." width="250rem" height="250rem">
             <h3>An after school coding instructional program.</h3>
             <h3>contact@codeschool.com</h3></div>
-            <div class="spot3"><h2>Tree Removal Service</h2>
-            <img src="images/tree.jpg" alt="Men under a tree.">
+            <div class="spot3"><h2 class="h2headings">Tree Removal Service</h2>
+            <img src="images/tree.jpg" alt="Men under a tree." width="250rem" height="200rem">
             <h3>Need a tree removed?</h3>
             <h3>Call us: 999-999-9999</h3>
         </div>
-            
-
-        </div>
-   
     </main>
     <footer>
         <img src="./images/saratogaspringslogo.jpg" alt="logo of Saratoga Springs">
@@ -104,5 +108,6 @@
       <script src="scripts/currentDate.js"></script>
       <script src="scripts/script.js"></script>
       <script src="scripts/date.js"></script>
+      <script src="scripts/banner.js"></script>
 </body>
 </html>

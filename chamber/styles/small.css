@@ -1,0 +1,302 @@
+body {
+	max-width: 960px;
+    margin: 0 auto;
+	padding: 0;
+	font-size: 16px;
+	font-family: 'Varela Round', sans-serif;
+    box-sizing: border-box;
+    background-color: rgb(127, 172, 181);
+}
+
+body, .banner {
+    margin:0 auto;
+}
+.banner {
+    margin: 0;
+    display:block;
+    background: #e6921d;
+}
+.banner-content {
+    padding: 10px;
+    max-width: 960px;
+    margin: 0 auto;
+    display:flex;
+    align-items: center;
+}
+.banner-text {
+    flex-grow: 1;
+    line-height:  1;
+    font-size: 25px;
+}
+.banner-close {
+    background: none;
+    border:none;
+    cursor: pointer;
+}
+.banner-text, .banner-close > span {
+    color: black;
+
+}
+.material-icon {
+    align-items: right;
+}
+/*-------header-------*/
+
+header {
+	display: flex;
+	flex-direction: column;
+	background-color: rgb(13, 114, 122);
+	color:white;
+	align-items: left;
+	justify-content: left;
+	padding: 20px;
+    max-width: 960px;
+    position: relative;
+}
+
+.logo {
+	display: flex;
+}
+
+#date2 {
+	display: block;
+}
+
+picture img {
+	width: 8rem;
+	height: auto;
+
+}
+
+.headings {
+	top: 10px;
+	right: 10px;
+	width: fit-content;
+	font-size: 1rem;
+	padding: .5rem;
+}
+
+.social {
+	display: flex;
+	gap: 10px;
+}
+
+.social svg {
+	width: 32px;
+	height: auto;
+}
+
+/*-------nav-------*/
+nav {
+	max-width: 700px;
+	margin: 10px auto;
+}
+
+/* small view navigation */
+#hamButton {
+	display: block;
+	position: absolute;
+	top: 75px;
+	right: 10px;
+	width: fit-content;
+	font-size: 1.5rem;
+	padding: .5rem;
+	color: rgb(13, 114, 122);
+}
+.navigation {
+	display: flex;
+	flex-direction: column;
+	list-style: none;
+	background-color: #FE7F2D;
+	
+}
+ul {
+	margin-block-start: 0;
+	padding-inline-start: 0;
+}
+.navigation li {
+    display: none;
+}
+.navigation li a {
+	padding: 1.15rem;
+	display: block;
+	text-align: center;
+	text-decoration: none;
+	color:#333;
+}
+.navigation li a:hover {
+	background-color:#FCCA46;
+	color: #333;
+	font-weight: 700;
+}
+
+/* when the button is clicked - the responsive class is added and accounted for here */
+.responsive li {
+	display: block;
+	width: 100%;
+}
+.responsive li a {
+	display: block;
+}
+
+/*-------main--------*/
+
+
+.content {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-gap: 1px;
+	max-width: 960px;
+	margin: 5px;
+    
+}
+
+.hero {
+    grid-column: 1;
+    grid-row: 1;
+    object-fit: cover;
+    border-radius: 10px;
+    padding: 1rem;
+    margin: 0.5rem 0.5rem 0 0 ;
+    background-color: rgb(168, 185, 192);
+	padding: 10px;
+    position: relative;
+}
+
+.heroImage {
+    margin: 10px;
+    width: 100%;
+    height: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+
+    
+}
+.hero-h2 {
+    position: absolute;
+    top: 10%;
+    left: 60%;
+    font-size: 2rem;
+
+}
+
+.heroJoin {
+	position: absolute;
+	top: 60%;
+	left: 40%;
+	border-radius: 25px;
+  	background: #FCCA46;
+  	padding: 20px;
+    box-shadow: 0 0 30px #f4eeee;	
+
+}
+
+.heroJoin a {
+	text-decoration: none;
+	color:#16065c;
+    background: #FCCA46;
+	text-align: center;
+	font-weight: 800;	
+}
+
+.event {
+    border-radius: 10px;
+    background-color:rgb(168, 185, 192);
+    padding: 1rem;
+    margin: 0.5rem 0.5rem 0 0 ;
+    grid-column: 1;
+    grid-row: 2;
+    text-align: center;
+}
+
+.event a {
+	text-decoration: none;
+}
+
+.weather{
+    border-radius: 10px;
+    background-color: rgb(168, 185, 192);
+    padding: 1rem;
+    margin: 0.5rem 0.5rem 0 0 ;
+    grid-column: 1;
+    grid-row: 3;
+    text-align: center;
+}
+
+.sun {
+	color:#FCCA46;
+	font-size: 80px;
+}
+
+.news{
+    border-radius: 10px;
+    background-color: rgb(168, 185, 192);
+    padding: 1rem;
+    margin: 0.5rem 0.5rem 0 0 ;
+    grid-column: 1;
+    grid-row: 4;
+}
+
+.spotlight{
+    border-radius: 10px;
+    background-color: rgb(168, 185, 192);
+    padding: 1rem;
+    margin: 0.5rem 0.5rem 0 0 ;
+    grid-row: 5;
+    display: flex;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2;
+    grid-gap: 1rem;
+    text-align: center;
+}
+
+.spot1{
+    grid-row: 1;
+    border: 1px solid black;
+}
+.spot2{
+    grid-row: 2;
+    border: 1px solid black;
+}
+.spot3 { 
+    display: none;
+}
+
+.h2headings {
+    border-bottom: 2px solid black;
+    color:#FE7F2D;
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    text-align: center;
+}
+
+.join {
+    display: none;
+ }
+
+
+/*-------footer------------*/
+
+footer {
+	padding: 1rem;
+	justify-content: center;
+    text-align: center;
+	font-weight: 400;
+    background-color: rgb(13, 114, 122);
+    color:white;
+}
+footer img {
+	width: 8rem;
+	height: auto;
+
+}
+footer a {
+	font-size: 1.5rem;
+	color:#16065c;
+	text-decoration: none;
+}
+footer a:hover {
+	color: white;
+}

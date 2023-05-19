@@ -1,4 +1,4 @@
-body {
+/*body {
 	max-width: 960px;
     margin: 0 auto;
 	padding: 0;
@@ -9,7 +9,7 @@ body {
 
 /*-------header-------*/
 
-header {
+/*header {
 	display: flex;
 	flex-direction: column;
 	background-color: rgb(13, 114, 122);
@@ -55,7 +55,7 @@ nav {
 }
 
 /* small view navigation */
-#hamButton {
+/*#hamButton {
 	display: block;
 	position: absolute;
 	top: 75px;
@@ -104,7 +104,7 @@ ul {
 
 /*-------main--------*/
 
-#content {
+/*#content {
 	display: grid;
 	grid-template-columns: 1fr;
 	grid-template-areas: 
@@ -130,7 +130,9 @@ ul {
 
 #content .hero img {
 	position: relative;
-	background-size: cover;
+	width: 100%;
+  	height: 100%;
+  	object-fit: cover;
 }
 
 .hero h2 {
@@ -212,7 +214,7 @@ ul {
 
 /*-------footer------------*/
 
-footer {
+/*footer {
 	padding: 1rem;
 	justify-content: center;
     text-align: center;
@@ -232,4 +234,4 @@ footer a {
 }
 footer a:hover {
 	color: white;
-}
+}*/

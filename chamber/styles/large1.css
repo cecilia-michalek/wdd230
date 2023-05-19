@@ -1,0 +1,202 @@
+@media screen and (min-width: 60rem) {
+
+header {
+	display: flex;
+	flex-direction: column;
+	background-color: rgb(13, 114, 122);
+	color:white;
+	align-items: left;
+	justify-content: left;
+	padding: 20px;
+    max-width: 960px;
+    position:relative;
+}
+.logo {
+	display:flex;
+}
+
+#date2 {
+	display: block;
+}
+
+picture img {
+	width: 8rem;
+	height: auto;
+
+}
+
+.headings {
+	top: 10px;
+	right: 10px;
+	width: fit-content;
+	font-size: 1rem;
+	padding: .5rem;
+}
+.social {
+	display: flex;
+	gap: 10px;
+}
+.social svg {
+	width: 32px;
+	height: auto;
+}
+
+/*-------nav-------*/
+#hamButton { display: none; }
+    header img {
+        width: 80%;
+    }
+    .headings h1 {
+        font-size: 3rem;
+    }
+    nav ul li a {
+        padding: .5rem 1rem;
+        justify-content: center;
+
+    }
+
+    nav ul #responsive {
+        display: flex;
+        margin-left: 2vw;
+        border-left: 1px solid black;
+    }
+    nav li {
+        display: block;
+        flex: 1 1 100%;
+
+    }
+
+    .navigation {
+		flex-direction: row;
+	}
+    .navigation li {
+        flex: 1 1 auto;
+    }
+    nav ul li a {
+        border: none;
+        border-right: 1px solid black;
+        color: yellow;
+    }
+
+.content { 
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap:0.5em;
+
+}
+
+.event{
+    width: auto;
+    height: 250px;
+    border-radius: 10px;
+    background-color:rgb(168, 185, 192);
+    padding: 1rem;
+    margin: 0.5rem 0.5rem 0 0 ;
+    grid-column: 1;
+    grid-row: 1;
+}
+.hero{
+    width: auto;
+    height: auto;
+    border-radius: 10px;
+    background-color:rgb(168, 185, 192);
+    padding: 1rem;
+    margin: 0.5rem 0.5rem 0 0 ;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+.heroImage {
+    margin: 10px;
+    width: 85%;
+    height: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    
+}
+.spotlight{
+    width: auto;
+    height: auto;
+    border-radius: 10px;
+    background-color: rgb(168, 185, 192);
+    padding: 1rem;
+    margin: 0.5rem 0.5rem 0 0 ;
+    grid-column: 4;
+    grid-row-start: 1;
+    grid-row-end: 4;
+    display: flex;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 3;
+    grid-gap: 1rem;
+}
+.spot1{
+    grid-row: 1;
+    border: 1px solid black;
+}
+.spot2{
+    grid-row: 2;
+    border: 1px solid black;
+}
+.spot3{
+    display: block;
+    grid-row: 3;
+    border: 1px solid black;
+}
+.weather{
+    width: auto;
+    height: 250px;
+    border-radius: 10px;
+    background-color: rgb(168, 185, 192);
+    padding: 1rem;
+    margin: 0.5rem 0.5rem 0 0 ;
+    grid-column: 1;
+    grid-row: 2;
+}
+.join{
+    display: block;
+    width: 250px;
+    height: auto;
+    border-radius: 10px;
+    background-color: rgb(168, 185, 192);
+    padding: 1rem;
+    margin: 0.5rem 0.5rem 0 0 ;
+    grid-column: 1;
+    grid-row: 3;
+}
+.news{
+    border-radius: 10px;
+    background-color: rgb(168, 185, 192);
+    padding: 1rem;
+    margin: 0.5rem 0.5rem 0 0 ;
+    grid-column: 2/4;
+    grid-row: 3;
+}
+
+/*-------footer------------*/
+
+footer {
+	padding: 1rem;
+	justify-content: center;
+    text-align: center;
+	font-weight: 400;
+    background-color: rgb(13, 114, 122);
+    color:white;
+}
+footer img {
+	width: 8rem;
+	height: auto;
+
+}
+footer a {
+	font-size: 1.5rem;
+	color:#16065c;
+	text-decoration: none;
+}
+footer a:hover {
+	color: white;
+}
+}
