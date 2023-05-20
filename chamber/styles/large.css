@@ -32,6 +32,7 @@ nav ul #responsive {
     margin-left: 2vw;
     border-left: 1px solid black;
     }
+    
 nav li {
     display: block;
     flex: 1 1 100%;
@@ -41,10 +42,12 @@ nav li {
 .navigation {
 	flex-direction: row;
 	}
+
 .navigation li {
     display: block;
     flex: 1 1 auto;
     }
+
 nav ul li a {
     border: none;
     border-right: 1px solid black;
