@@ -2,7 +2,7 @@ body {
 	max-width: 960px;
     margin: 0 auto;
 	padding: 0;
-	font-size: 16px;
+	font-size: 12px;
 	font-family: 'Varela Round', sans-serif;
     box-sizing: border-box;
     background-color: rgb(127, 172, 181);
@@ -15,6 +15,7 @@ body, .banner {
     margin: 0;
     display:block;
     background: #e6921d;
+    
 }
 .banner-content {
     padding: 10px;
@@ -26,12 +27,15 @@ body, .banner {
 .banner-text {
     flex-grow: 1;
     line-height:  1;
-    font-size: 25px;
+    font-size: 15px;
+    text-align: center;
+    padding: 10px;
 }
 .banner-close {
     background: none;
     border:none;
     cursor: pointer;
+    padding: 10px;
 }
 .banner-text, .banner-close > span {
     color: black;
@@ -47,38 +51,34 @@ header {
 	flex-direction: column;
 	background-color: rgb(13, 114, 122);
 	color:white;
-	align-items: left;
-	justify-content: left;
-	padding: 20px;
     max-width: 960px;
     position: relative;
+    
 }
 
 .logo {
 	display: flex;
+    margin: 15px;
+    justify-content: center;
+    align-items: center;
+    
+    
 }
 
 #date2 {
 	display: block;
-}
-
-picture img {
-	width: 8rem;
-	height: auto;
-
+    font-size: medium;
 }
 
 .headings {
-	top: 10px;
-	right: 10px;
-	width: fit-content;
-	font-size: 1rem;
-	padding: .5rem;
+	font-size: .8rem;
+	padding: 1rem;
 }
 
 .social {
 	display: flex;
 	gap: 10px;
+    align-self: flex-start;
 }
 
 .social svg {
@@ -96,8 +96,8 @@ nav {
 #hamButton {
 	display: block;
 	position: absolute;
-	top: 75px;
-	right: 10px;
+	top: 100px;
+	right: 20px;
 	width: fit-content;
 	font-size: 1.5rem;
 	padding: .5rem;
@@ -124,7 +124,7 @@ ul {
 	text-decoration: none;
 	color:#333;
 }
-.navigation li a:hover {
+.navigation li:hover {
 	background-color:#FCCA46;
 	color: #333;
 	font-weight: 700;
@@ -156,15 +156,12 @@ ul {
     grid-row: 1;
     object-fit: cover;
     border-radius: 10px;
-    padding: 1rem;
     margin: 0.5rem 0.5rem 0 0 ;
     background-color: rgb(168, 185, 192);
-	padding: 10px;
     position: relative;
 }
 
 .heroImage {
-    margin: 10px;
     width: 100%;
     height: auto;
     background-position: center;
@@ -245,7 +242,6 @@ ul {
     padding: 1rem;
     margin: 0.5rem 0.5rem 0 0 ;
     grid-row: 5;
-    display: flex;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 2;

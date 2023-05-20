@@ -1,9 +1,10 @@
-const today = newDate().getDate();
+const today = new Date().getDay();
 
-if (today=== 1|| today ===2) {
-    document.querySelector(".banner").textContent = today
+
+if (today=== 1|| today ===6) {
+    document.querySelector(".banner").style.display="flex";
 }
-else (today!==1 || today!== 2) {
+else {
     document.querySelector('.banner').style.display="none";
     
 };
