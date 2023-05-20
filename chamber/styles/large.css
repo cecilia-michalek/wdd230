@@ -42,7 +42,7 @@ nav li {
 	flex-direction: row;
 	}
 .navigation li {
-    display:block;
+    display: block;
     flex: 1 1 auto;
     }
 nav ul li a {
