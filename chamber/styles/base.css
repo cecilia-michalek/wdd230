@@ -173,16 +173,16 @@ ul {
 }
 .hero-h2 {
     position: absolute;
-    top: 10%;
-    left: 60%;
-    font-size: 2rem;
+    top: 50px;
+    left: 50px;
+    font-size: 1.5rem;
 
 }
 
 .heroJoin {
 	position: absolute;
-	top: 60%;
-	left: 40%;
+	top: 85%;
+	left: 50%;
 	border-radius: 25px;
   	background: #FCCA46;
   	padding: 20px;
