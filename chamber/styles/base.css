@@ -1,48 +1,86 @@
-/*body {
+body {
 	max-width: 960px;
     margin: 0 auto;
 	padding: 0;
-	font-size: 16px;
+	font-size: 12px;
 	font-family: 'Varela Round', sans-serif;
     box-sizing: border-box;
+    background-color: rgb(127, 172, 181);
 }
 
+body, .banner {
+    margin:0 auto;
+}
+.banner {
+    margin: 0;
+    display:block;
+    background: #e6921d;
+    
+}
+.banner-content {
+    padding: 10px;
+    max-width: 960px;
+    margin: 0 auto;
+    display:flex;
+    align-items: center;
+}
+.banner-text {
+    flex-grow: 1;
+    line-height:  1;
+    font-size: 15px;
+    text-align: center;
+    padding: 10px;
+}
+.banner-close {
+    background: none;
+    border:none;
+    cursor: pointer;
+    padding: 10px;
+}
+.banner-text, .banner-close > span {
+    color: black;
+
+}
+.material-icon {
+    align-items: right;
+}
 /*-------header-------*/
 
-/*header {
+header {
 	display: flex;
 	flex-direction: column;
 	background-color: rgb(13, 114, 122);
 	color:white;
-	align-items: left;
-	justify-content: left;
-	padding: 20px;
+    max-width: 960px;
+    position: relative;
+    
 }
+
 .logo {
-	display:flex;
+	display: flex;
+    margin: 15px;
+    justify-content: center;
+    align-items: center;
+    
+    
 }
 
 #date2 {
 	display: block;
-}
-
-picture img {
-	width: 8rem;
-	height: auto;
-
+    font-size: medium;
 }
 
 .headings {
-	top: 10px;
-	right: 10px;
-	width: fit-content;
-	font-size: 1rem;
-	padding: .5rem;
+	font-size: .8rem;
+	padding: 1rem;
 }
+
 .social {
 	display: flex;
 	gap: 10px;
+    align-self: flex-start;
 }
+
 .social svg {
 	width: 32px;
 	height: auto;
@@ -55,11 +93,11 @@ nav {
 }
 
 /* small view navigation */
-/*#hamButton {
+#hamButton {
 	display: block;
 	position: absolute;
-	top: 75px;
-	right: 10px;
+	top: 100px;
+	right: 20px;
 	width: fit-content;
 	font-size: 1.5rem;
 	padding: .5rem;
@@ -69,7 +107,7 @@ nav {
 	display: flex;
 	flex-direction: column;
 	list-style: none;
-	background-color: #FE7F2D;
+	background-color: #e6921d;
 	
 }
 ul {
@@ -77,7 +115,7 @@ ul {
 	padding-inline-start: 0;
 }
 .navigation li {
-	display: none;
+    display: none;
 }
 .navigation li a {
 	padding: 1.15rem;
@@ -86,7 +124,7 @@ ul {
 	text-decoration: none;
 	color:#333;
 }
-.navigation li a:hover {
+.navigation li:hover {
 	background-color:#FCCA46;
 	color: #333;
 	font-weight: 700;
@@ -101,130 +139,152 @@ ul {
 	display: block;
 }
 
-
 /*-------main--------*/
 
-/*#content {
+
+.content {
 	display: grid;
 	grid-template-columns: 1fr;
-	grid-template-areas: 
-	'hero'
-	'event'
-	'weather'
-	'news'
-	'spotlight'
-	'spotlight';
-	grid-gap: 10px;
+	grid-gap: 1px;
 	max-width: 960px;
 	margin: 5px;
+    
 }
-#content img{
-	width: 100%;
-	height: auto;
+
+.hero {
+    grid-column: 1;
+    grid-row: 1;
+    object-fit: cover;
+    border-radius: 10px;
+    margin: 0.5rem 0.5rem 0 0 ;
+    background-color: rgb(168, 185, 192);
+    position: relative;
 }
-#content .hero {
-	margin: 10px auto;
-	position: relative;
+
+.heroImage {
+    width: 100%;
+    height: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+
+    
+}
+.hero-h2 {
+    position: absolute;
+    top: 10%;
+    left: 60%;
+    font-size: 2rem;
 
 }
 
-#content .hero img {
-	position: relative;
-	width: 100%;
-  	height: 100%;
-  	object-fit: cover;
-}
-
-.hero h2 {
+.heroJoin {
 	position: absolute;
-	top: 20px;
-	left: 50px;
-	
+	top: 60%;
+	left: 40%;
+	border-radius: 25px;
+  	background: #FCCA46;
+  	padding: 20px;
+    box-shadow: 0 0 30px #f4eeee;	
+
 }
+
+.heroJoin a {
+	text-decoration: none;
+	color:#16065c;
+    background: #FCCA46;
+	text-align: center;
+	font-weight: 800;	
+}
+
+.event {
+    border-radius: 10px;
+    background-color:rgb(168, 185, 192);
+    padding: 1rem;
+    margin: 0.5rem 0.5rem 0 0 ;
+    grid-column: 1;
+    grid-row: 2;
+    text-align: center;
+}
+
+.event a {
+	text-decoration: none;
+}
+
+.weather{
+    border-radius: 10px;
+    background-color: rgb(168, 185, 192);
+    padding: 1rem;
+    margin: 0.5rem 0.5rem 0 0 ;
+    grid-column: 1;
+    grid-row: 3;
+    text-align: center;
+}
+
 .sun {
 	color:#FCCA46;
 	font-size: 80px;
 }
-#joinbutton {
-	position: absolute;
-	top: 230px;
-	left: 300px;
-	border-radius: 25px;
-  	background: #FCCA46;
-  	padding: 20px;
-	
-}
-#joinbutton a {
-	text-decoration: none;
-	color:#16065c;
-	text-align: center;
-	font-weight: 800;
-	
+
+.news{
+    border-radius: 10px;
+    background-color: rgb(168, 185, 192);
+    padding: 1rem;
+    margin: 0.5rem 0.5rem 0 0 ;
+    grid-column: 1;
+    grid-row: 4;
 }
 
-#content .event {
-	grid-area: event;
-	text-align: center;
-	padding: 10px;
-
+.spotlight{
+    border-radius: 10px;
+    background-color: rgb(168, 185, 192);
+    padding: 1rem;
+    margin: 0.5rem 0.5rem 0 0 ;
+    grid-row: 5;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2;
+    grid-gap: 1rem;
+    text-align: center;
 }
-#content .event h2 {
-	color:#FCCA46;
+
+.spot1{
+    grid-row: 1;
+    border: 1px solid black;
+}
+.spot2{
+    grid-row: 2;
+    border: 1px solid black;
+}
+.spot3 { 
+    display: none;
+}
+
+.h2headings {
+    border-bottom: 2px solid black;
+    color:#FE7F2D;
 	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-}
-#content .event a {
-	text-decoration: none;
-}
-#content .hero {
-	grid-area: hero;
+    text-align: center;
 }
 
-#content .weather {
-	grid-area: weather;
-	text-align: center;
-}
+.join {
+    display: none;
+ }
 
-#content .news {
-	grid-area: news;
-	text-align: center;
-}
-.spotlight {
-	display: flex;
-	flex-direction: column;
-	
-}
-#content .spot1 .spot2 {
-	grid-area: spotlight;
-	width: 100%;
-	margin: 200px;
-	
-}
-#content .spot3 {
-	display: none;
-}
-#content .join {
-	display: none;
-}
-
-#content div {
-	background-color: #bbb;
-	border: 2px solid rgb(13, 114, 122);
-	padding: 10px;
-}
 
 /*-------footer------------*/
 
-/*footer {
+footer {
 	padding: 1rem;
-	justify-content: center;
     text-align: center;
 	font-weight: 400;
     background-color: rgb(13, 114, 122);
     color:white;
 }
-footer img {
-	width: 8rem;
-	height: auto;
+.footerlogo {
+	display: block;
+    justify-items: center;
 
 }
 footer a {
@@ -234,4 +294,9 @@ footer a {
 }
 footer a:hover {
 	color: white;
-}*/
+}
+
+.copyright {
+    display: block;
+
+}
