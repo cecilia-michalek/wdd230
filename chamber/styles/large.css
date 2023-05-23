@@ -32,7 +32,7 @@ nav ul #responsive {
     margin-left: 2vw;
     border-left: 1px solid black;
     }
-    
+
 nav li {
     display: block;
     flex: 1 1 100%;
@@ -87,6 +87,7 @@ nav ul li a {
 }
 
 .spotlight{
+    
     width: auto;
     height: auto;
     border-radius: 10px;
@@ -97,8 +98,9 @@ nav ul li a {
     display: flex;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 3;
+    grid-template-rows: 1fr 2fr 1fr;
     grid-gap: 1rem;
+    background-color: (205, 222, 229);
 }
 .spot1{
     grid-row: 1;

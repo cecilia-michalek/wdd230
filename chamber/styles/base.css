@@ -2,7 +2,7 @@ body {
 	max-width: 960px;
     margin: 0 auto;
 	padding: 0;
-	font-size: 12px;
+	font-size: 16px;
 	font-family: 'Varela Round', sans-serif;
     box-sizing: border-box;
     background-color: rgb(127, 172, 181);
@@ -27,7 +27,7 @@ body, .banner {
 .banner-text {
     flex-grow: 1;
     line-height:  1;
-    font-size: 15px;
+    font-size: 16px;
     text-align: center;
     padding: 10px;
 }
@@ -41,9 +41,7 @@ body, .banner {
     color: black;
 
 }
-.material-icon {
-    align-items: right;
-}
+
 /*-------header-------*/
 
 header {
@@ -174,7 +172,7 @@ ul {
     position: absolute;
     top: 50px;
     left: 50px;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
 
 }
 
@@ -199,7 +197,7 @@ ul {
 
 .event {
     border-radius: 10px;
-    background-color:rgb(168, 185, 192);
+    background-color:rgb(205, 222, 229);
     padding: 1rem;
     margin: 0.5rem 0.5rem 0 0 ;
     grid-column: 1;
@@ -213,7 +211,7 @@ ul {
 
 .weather{
     border-radius: 10px;
-    background-color: rgb(168, 185, 192);
+    background-color: rgb(205, 222, 229);
     padding: 1rem;
     margin: 0.5rem 0.5rem 0 0 ;
     grid-column: 1;
@@ -228,7 +226,7 @@ ul {
 
 .news{
     border-radius: 10px;
-    background-color: rgb(168, 185, 192);
+    background-color: rgb(205, 222, 229);
     padding: 1rem;
     margin: 0.5rem 0.5rem 0 0 ;
     grid-column: 1;
@@ -237,13 +235,12 @@ ul {
 
 .spotlight{
     border-radius: 10px;
-    background-color: rgb(168, 185, 192);
+    background-color: rgb(205, 222, 229);
     padding: 1rem;
     margin: 0.5rem 0.5rem 0 0 ;
-    grid-row: 5;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 2;
+    grid-template-rows: 1fr;
     grid-gap: 1rem;
     text-align: center;
 }
