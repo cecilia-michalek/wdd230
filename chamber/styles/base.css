@@ -69,7 +69,7 @@ header {
 }
 
 .headings {
-	font-size: .8rem;
+	font-size: 1rem;
 	padding: 1rem;
 }
 
@@ -87,6 +87,7 @@ header {
 /*-------nav-------*/
 nav {
 	margin: 10px auto;
+    font-size: 1.5rem;
 }
 
 /* small view navigation */
@@ -96,7 +97,7 @@ nav {
 	top: 100px;
 	right: 20px;
 	width: fit-content;
-	font-size: 1.5rem;
+	font-size: 1.8rem;
 	padding: .5rem;
 	color: rgb(13, 114, 122);
 }
@@ -154,7 +155,7 @@ ul {
     object-fit: cover;
     border-radius: 10px;
     margin: 0.5rem 0.5rem 0 0 ;
-    background-color: rgb(168, 185, 192);
+    background-color:rgb(205, 222, 229);
     position: relative;
 }
 
@@ -164,10 +165,9 @@ ul {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    position: relative;
-
-    
+    position: relative;    
 }
+
 .hero-h2 {
     position: absolute;
     top: 50px;
@@ -259,9 +259,10 @@ ul {
 
 .h2headings {
     border-bottom: 2px solid black;
-    color:#FE7F2D;
+    color:#c25f1d;
 	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
     text-align: center;
+    font-size: 1.5rem;
 }
 
 .join {
