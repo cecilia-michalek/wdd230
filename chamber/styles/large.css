@@ -81,7 +81,7 @@ nav ul li a {
     grid-column: 3/4;
     grid-row: 1/4;
     grid-gap: 1rem;
-    background-color: (205, 222, 229);
+    background-color:rgb(205, 222, 229);
 }
 .spot1{
     grid-row: 1/2;

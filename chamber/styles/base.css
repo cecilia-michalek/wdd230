@@ -58,9 +58,7 @@ header {
 	display: flex;
     margin: 15px;
     justify-content: center;
-    align-items: center;
-    
-    
+    align-items: center;       
 }
 
 #date2 {
