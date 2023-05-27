@@ -24,8 +24,9 @@
     </div>
     <header>
         <div class="logo">
-        <picture>
-            <img src="images/sunset-logo.png" alt="logo of Saratoga Springs" width="80" height="80"></picture>
+        <picture class="logo">
+            <img src="images/sunset-logo.webp" alt="logo" width="80" height="80">
+        </picture>
         <div class="headings">
         <h1>Saratoga Springs City Chamber of Commerce</h1>
         <span id="date2"></span></div>
@@ -57,8 +58,15 @@
     </header>
     <main class="content">
         <div class="hero">
-            <picture class="heroImage">
-                <img src="images/lake.jpg" alt="Picture of the Utah Lake." width="960" height="640"></picture>
+            <picture class="wdd230picture">
+                <source media="(min-width: 800px)" srcset="images/wdd230-org800.jpg" 4x>
+                <source media="(min-width:600px)" srcset="images/wdd230-org600.jpg" 2x>
+                <source media="(min-width:300px)" srcset="images/wdd230-org (1)300.jpg" 1x>
+                <img src="images/wdd230-org (1)300.jpg" alt="Three people at a desk"></picture>
+            
+            <!--<picture class="heroImage">
+                <img src="images/lake.jpg" alt="Picture of the Utah Lake." width="960" height="640"></picture>-->
+            
             <h2 class="hero-h2">Welcome to Saratoga Springs</h2>
             <div class="heroJoin">   
                 <a href="#">JOIN THE CHAMBER</a>
@@ -71,9 +79,16 @@
             </div>
         <div class="weather">
             <h2 class="h2headings">Weather</h2>
-            <span class='sun'>&#x1F324;</span>
-            <h2>Mostly Sunny Skies</h2>
-            <h3>Temperature: 75 degrees</h3>
+            <p>Temperature in Saratoga Springs, UT is
+                <span type="text" id="t">30</span> &deg;F
+            </p>
+            <figure>
+            <span class='weather-icon'>&#x1F324;</span>
+            </figure>
+            <figcaption>Mostly Sunny Skies</figcaption>
+            <p>Wind Speed: <span type="text" id="s">25</span> m/h
+            </p>
+            <p>Wind Chill: <span id="windchill"></span></p>
         </div>
         <div class="news">
             <h2 class="h2headings">News Release</h2>
@@ -85,11 +100,11 @@
         </div>
         <div class="spotlight">
             <div class="spot1"><h2 class="h2headings">In need of a dumpster?</h2>
-                <img src="images/DumpTruck.jpg" alt="Dump truck" width="100" height="80"></div>
+                <img src="images/DumpTruck.jpg" alt="Dump truck" width="100" height="80">
             <h3>We got you covered!</h3>
             <h3>Call us: 999-999-9999</h3>
-            <h3>trushOnWheel.com</h3>
-        </div>
+            <h3>trushOnWheel.com</h3></div>
+            
             <div class="spot2"><h2 class="h2headings">Code School</h2>
             <img src="images/laptopImage.png" alt="Cartuned laptop." width="125" height="125">
             <h3>An after school coding instructional program.</h3>
@@ -98,12 +113,12 @@
             <div class="spot3"><h2 class="h2headings">Tree Removal Service</h2>
             <img src="images/tree.jpg" alt="Men under a tree." width="125" height="80">
             <h3>Need a tree removed?</h3>
-            <h3>Call us: 999-999-9999</h3>
+            <h3>Call us: 999-999-9999</h3></div>
         </div>
     </main>
     <footer>
         <div class="footerlogo">
-            <img src="images/sunset-logo.png" alt="logo of Saratoga Springs" width="50" height="50">
+            <img src="images/sunset-logo.webp" alt="logo of Saratoga Springs" width="50" height="50">
             <p>Contact Us: Saratoga Springs Chamber- 801-333-3333</p> 
             <a href="https://www.google.com/maps/place/Saratoga+Springs+City+Hall/@40.3862865,-111.9156431,17z/data=!4m14!1m7!3m6!1s0x874d7e5123b64b5f:0xf271504ba7dcdebf!2sSaratoga+Springs+City+Hall!8m2!3d40.3862824!4d-111.9130682!16s%2Fg%2F1vyxjx05!3m5!1s0x874d7e5123b64b5f:0xf271504ba7dcdebf!8m2!3d40.3862824!4d-111.9130682!16s%2Fg%2F1vyxjx05">Location Map<span>📍</span></a></div>
         <div class="copyright">
