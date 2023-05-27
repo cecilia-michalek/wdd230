@@ -5,8 +5,6 @@ const input = document.getElementById("input");
 const ul = document.querySelector("ul");
 const del = document.getElementsByClassName("delBtn");
 
-
-
 function inputLength() {
 	return input.value.length;
 }
@@ -14,7 +12,7 @@ function inputLength() {
 function createListElement() {
 	let li = document.createElement("li");
 	li.appendChild(document.createTextNode(input.value));
-  
+
 	//creates a button and adds it inside the li
 	let btn = document.createElement("Button");
 	btn.appendChild(document.createTextNode("❌"));
