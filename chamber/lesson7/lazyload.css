@@ -1,0 +1,29 @@
+body {
+    max-width: 960px;
+    margin: 0 auto;
+    
+}
+h1 {
+    padding: 1rem;
+    text-align: center;
+}
+
+main {
+    display: grid;
+	grid-template-columns: 1fr;
+    justify-items: center;
+	grid-gap: 10px;
+	
+}
+
+img[data-src] {
+    filter: blur(0.5em);
+}
+
+img {
+    filter: blur (2em);
+    transition: filter .5s;
+    border: 2px solid blueviolet;
+    padding: 2px;
+    justify-content: center;
+}
