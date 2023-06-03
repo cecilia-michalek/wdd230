@@ -337,12 +337,7 @@ img.discoverImages {
     grid-row: 1/2;
     border: 1px solid black;
 }
-#numVisits {
-    padding: 20px;
-    text-align: center;
-    font-size: 1em;
-    
-}
+
 
 /*-------footer------------*/
 
