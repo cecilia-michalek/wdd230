@@ -17,11 +17,11 @@ main {
 }
 
 img[data-src] {
-    filter: blur(0.5em);
+    filter: blur(0.3em);
 }
 
 img {
-    filter: blur (2em);
+    filter: blur (1em);
     transition: filter .5s;
     border: 2px solid blueviolet;
     padding: 2px;
