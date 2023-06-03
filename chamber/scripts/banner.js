@@ -1,7 +1,7 @@
 const today = new Date().getDay();
 
 
-if (today=== 1|| today ===6) {
+if (today=== 1|| today ===2) {
     document.querySelector(".banner").style.display="flex";
 }
 else {

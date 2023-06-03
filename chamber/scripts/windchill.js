@@ -9,7 +9,5 @@ if (t<=50 && s>3.0){
 else{
     windchill = "N/A";
 }
-// Round Answer
-windchill = Math.floor(windchill);
 
 document.getElementById('windchill').innerHTML = windchill;
