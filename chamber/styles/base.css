@@ -341,13 +341,14 @@ img.discoverImages {
 /* ----------Form-------------*/
 form fieldset {
     margin: 2rem 0;
-    border: 1px solid #445ba9;
+    border: 1px solid black;
     border-radius: 10px;
     padding: .5rem 2%;
+    background-color: rgb(205, 222, 229);
 }
 
 form legend {
-    color:#445ba9;
+    color:black;
     margin: 0 1rem;
     padding: 0 .5rem;
 }
@@ -356,7 +357,7 @@ form label.top, form div {
     display:block;
     padding-top: 1rem;
     color: #9c2c13;
-    font-size: .8rem;
+    font-size: 1rem;
 }
 
 form label.top input, form label.top select {
