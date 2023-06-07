@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Saratoga Springs chamber of commerce, a place where community comes together.">
-    <title>Saratoga Springs Chamber of Commerce, where busineses thrive together.</title>
+    <meta name="description" content="Saratoga Springs Chamber of Commerce, join us. Please fill out a form.">
+    <title>Saratoga Springs Chamber of Commerce join us form.</title>
     <link rel="icon" href="favicon.ico">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
@@ -56,65 +56,39 @@
             </nav></div>
 
     </header>
-    <main class="content">
-        <div class="hero">
-            <!--<picture class="wdd230picture">
-                <source media="(min-width: 800px)" srcset="images/wdd230-org800.jpg" 4x>
-                <source media="(min-width:600px)" srcset="images/wdd230-org600.jpg" 2x>
-                <source media="(min-width:300px)" srcset="images/wdd230-org (1)300.jpg" 1x>
-                <img src="images/wdd230-org (1)300.jpg" alt="Three people at a desk" loading="lazy"></picture>-->
-            
-            <picture class="heroImage">
-                <img src="images/lake.jpg" alt="Picture of the Utah Lake." loading="lazy" width="960" height="640"></picture>
-            
-            <h2 class="hero-h2">Welcome to Saratoga Springs</h2>
-            <div class="heroJoin">   
-                <a href="join">JOIN THE CHAMBER</a>
-            </div>
-        </div>
-        <div class="event">
-            <h2 class="h2headings">Ribbon Cutting</h2>
-            <h3>The Diamond Shack</h3>
-            <p>Join us for the grand opening of The Diamond Shack, Thursday at 1:00pm.<a href="#" > more info...</a></p>
-            </div>
-        <div class="weather">
-            <h2 class="h2headings">Weather</h2>
-            <p>Temperature in Saratoga Springs, UT is
-                <span type="text" id="temperature">50</span> &deg;F
-            </p>
-            <figure>
-            <span class='weather-icon'>&#x1F324;</span>
-            </figure>
-            <figcaption>Mostly Sunny Skies</figcaption>
-            <p>Wind Speed: <span type="text" id="windspeed">25</span> MPH
-            </p>
-            <p>Wind Chill: <span id="windchill">N/A</span></p>
-        </div>
-        <div class="news">
-            <h2 class="h2headings">News Release</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia similique magni rem quaerat, cum repudiandae? Recusandae, impedit. Aliquid natus assumenda unde dolore fuga a at laborum! Culpa labore possimus sequi.</p>
-        </div>
-        <div class="join">
-            <a class="joinbtn" href="#">JOIN US!</a>
-            <p>Discover how to join the chamber of commerce and how it will benefit your organization!</p>
-        </div>
-        <div class="spotlight">
-            <div class="spot1"><h2 class="h2headings">In need of a dumpster?</h2>
-                <img src="images/DumpTruck.jpg" alt="Dump truck" width="100" height="80">
-            <p>We got you covered!</p>
-            <p>Call us: 999-999-9999</p>
-            <p>trushOnWheel.com</p></div>
-            
-            <div class="spot2"><h2 class="h2headings">Code School</h2>
-            <img src="images/laptopImage.png" alt="Cartuned laptop." width="125" height="125">
-            <p>An after school coding instructional program.</p>
-            <p>codeschool.com</p></div>
+    <main >
+        <h1>Join the Chamber</h1>
+        <form method="get" action="thankyou.html">
+            <fieldset>
+                <legend>Aplication Information</legend>
+                <label class="top">First Name* <input type="text" name="fname" required></label>
+                <label class="top">Last Name* <input type="text" name="lname" required></label>
+                <label class="top">Business Position Title <input type="text" name="title"></label>
+                <label class="top">Email* <input type="email" name="email" placeholder="someone@gmail.com" required></label>
+                <label class="top">Phone* <input type="tel" name="phone" placeholder="1235551234" required></label>
+                <label class="top">Business Name <input type="text" name="business"></label>
+            </fieldset>
+            <fieldset>
+                <legend>Membership Level</legend>
+                <div>Levels</div>
+                <label class="sbs"><input type="radio" name="level" value="NP"> NP</label>
+                <label class="sbs"><input type="radio" name="level" value="Bronze"> Bronze</label>
+                <label class="sbs"><input type="radio" name="level" value="Silver"> Silver</label>
+                <label class="sbs"><input type="radio" name="level" value="Gold"> Gold</label>
 
-            <div class="spot3"><h2 class="h2headings">Tree Removal Service</h2>
-            <img src="images/tree.jpg" alt="Men under a tree." width="125" height="80">
-            <p>Need a tree removed?</p>
-            <p>Call us: 999-999-9999</p></div>
-        </div>
+            </fieldset>
+            <fieldset>
+                <label class="sbs" for="business-description">Business Description:</label><br>
+                <textarea id="business-description" name="business-description" rows="4" cols="50"></textarea><br>
+            </fieldset>
+            
+            <input type="submit" value="Propose my Course" class="submitBtn">
+        </form>
+        
+
+          
+        
+
     </main>
     <footer>
         <div class="footerlogo">
