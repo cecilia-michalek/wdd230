@@ -5,7 +5,7 @@ body {
 	font-size: 16px;
 	font-family: 'Varela Round', sans-serif;
     box-sizing: border-box;
-    background-color: white;
+   
 }
 
 body, .banner {
@@ -144,6 +144,7 @@ ul {
 	max-width: 960px;
 	margin: 5px;
     padding: 5px;
+    color: #23487B
     
 }
 
@@ -270,28 +271,40 @@ ul {
 /*Dicovery Page*/
 
 .discoverMain {
+    margin: 10px auto;
+    color: #23487B;
     display: grid;
     grid-template-columns: 1fr;
-    max-width: 960px;
     background-color: rgb(205, 222, 229);
     padding: 1rem;
     border-radius: 10px;
     text-align: center;
-    
+    box-shadow: 0 0 10px darkgray;
+    max-width: 700px;
+    margin: 8px auto;
 }
 
-.discoverMain h1 {
-    position: absolute;
-    background-color: rgb(205, 222, 229);
- }
-
-img.discoverImages {
-    width: 600px;
-    height: auto;
+.discoverMain img {
+    width: 100%;
+    margin: 8px auto;
     border-radius: 10px;
-    padding:1rem;
-      
+    box-shadow: 0 0 10px darkgray;
 }
+
+.demographics {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: #23487B;
+}
+
+.demographics img {
+    width: 200px;
+    align-self: center;
+    margin: 8px auto;
+}
+
+
 .pDiscover {
     font-size: 1.2rem;  
     padding: 1rem;  
@@ -338,6 +351,16 @@ img.discoverImages {
     border: 1px solid black;
 }
 
+.visits1 {
+    background-color: #23487B;
+    padding: 8px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
 /* ----------Form-------------*/
 form fieldset {
     margin: 2rem 0;
@@ -348,7 +371,7 @@ form fieldset {
 }
 
 form legend {
-    color:black;
+    color: #23487B;
     margin: 0 1rem;
     padding: 0 .5rem;
 }
@@ -411,7 +434,14 @@ form label.top input:required:valid {
 
 /*---------Thank you ----------*/
 
-
+.thanksP {
+    display: block;
+    width: auto;
+    height: 20rem;
+    margin-top: 10%;
+    font-size: larger;
+    color: #23487B
+}
 
 /*-------footer------------*/
 
@@ -419,7 +449,7 @@ footer {
 	padding: 1rem;
     text-align: center;
 	font-weight: 400;
-    background-color: rgb(13, 114, 122);
+    background-color: rgb(61, 156, 162);;
     color:white;
 }
 .footerlogo {

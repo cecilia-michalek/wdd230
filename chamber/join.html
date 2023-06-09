@@ -47,7 +47,7 @@
             <nav>
                 <button id="hamButton">&#9776;</button>
                 <ul class="navigation">
-                    <li><a href="#" title="Home">Home</a></li>
+                    <li><a href="index" title="Home">Home</a></li>
                     <li><a href="discover" title="discover">Discover</a></li>
                     <li><a href="join" title="join">Join</a></li>
                     <li><a href="#" title="directory">Directory</a></li>
@@ -77,32 +77,32 @@
                 <label class="sbs"><input type="radio" name="level" value="Gold"> Gold</label>
                 
                 <h3>Click to see level benefits bellow:</h3>
-                <button class="levelBtn" onclick="toggleParagraph()">None Profit>
-                <p id="myParagraph1" class="hidden">Directory listing on Chamber website - Become publicly visible in the community 
-                    ​Attend monthly Chamber luncheons and learn from top business and government officials ($20 cost to cover catering).
-                    Chamber Membership plaque that can be displayed prominently in your place of business.
-                    Grand Opening and Ribbon Cutting Ceremony - We always invite the Mayor!
-                    Special member pricing/discounts for Chamber events and advertising in the Chamber magazine
-                    Opportunity to participate on Chamber committees. </p>
-                <button class="levelBtn" onclick="toggleParagraph()">Bronze>
-                <p id="myParagraph2" class="hidden">1 Reserved seat at Monthly Chamber Luncheons. Learn from Top Business Leaders, Community Leaders and Government Officials. 
-                            ​Monthly Foursomes with Carts and Range Balls at Fox Hollow.
-                            Logo clearly displayed on the directory page of the website.
-                            Company name listed in the footer of the weekly Chamber newsletter email. </p>
-                <button class="levelBtn" onclick="toggleParagraph()">Silver>
-                <p id="myParagraph3" class="hidden">Sponsorship credit of $500 on select events.
-                                    ​Logo visibly displayed on all digital and printed materials.
-                                    Banner recognition with logo displayed at all appropriate chamber events.
-                                    ​4 reserved seats at the Annual Utah County Business Summit - Multiple Chambers participate.
-                                    2 Reserved seats at Monthly Chamber Luncheons. Learn from Top Business Leaders, Community Leaders and Government Officials.  </p>
-                <button class="levelBtn" onclick="toggleParagraph()">Gold>
-                <p id="myParagraph4" class="hidden">Sponsorship credit of $1,500 on select events.
-                                            Executive Round Table Participation (by invitation).
-                                            ​2 Reserved seats at Monthly Chamber Luncheons. Learn from Top Business Leaders and Government Officials.​
-                                            Logo visibly displayed on all digital and printed materials.
-                                            Banner recognition with logo prominently displayed at all appropriate chamber events.
-                                            ​6 Reserved seats at the Annual Utah County Business Summit - Multiple Chambers participate.
-                                            ​​Weekly Foursomes with Carts at both Fox Hollow & TalonsCove Golf Club. Very few Chambers can boast to providing this benefit for their members!  </p>            
+                <button class="levelBtn" onclick="toggleParagraph('myParagraph1')">None Profit></button>
+                <p id="myParagraph1" class="hidden">-Directory listing on Chamber website. - Become publicly visible in the community.
+                    -​Attend monthly Chamber luncheons and learn from top business and government officials ($20 cost to cover catering).
+                    -Chamber Membership plaque that can be displayed prominently in your place of business.
+                    -Grand Opening and Ribbon Cutting Ceremony - We always invite the Mayor!
+                    -Special member pricing/discounts for Chamber events and advertising in the Chamber magazine.
+                    -Opportunity to participate on Chamber committees. </p>
+                <button class="levelBtn" onclick="toggleParagraph('myParagraph2')">Bronze></button>
+                <p id="myParagraph2" class="hidden">-1 Reserved seat at Monthly Chamber Luncheons. -Learn from Top Business Leaders, Community Leaders and Government Officials. 
+                            -​Monthly Foursomes with Carts and Range Balls at Fox Hollow.
+                            -Logo clearly displayed on the directory page of the website.
+                            -Company name listed in the footer of the weekly Chamber newsletter email. </p>
+                <button class="levelBtn" onclick="toggleParagraph('myParagraph3')">Silver></button>
+                <p id="myParagraph3" class="hidden">-Sponsorship credit of $500 on select events.
+                                    ​-Logo visibly displayed on all digital and printed materials.
+                                    -Banner recognition with logo displayed at all appropriate chamber events.
+                                    ​-4 reserved seats at the Annual Utah County Business Summit - Multiple Chambers participate.
+                                    -2 Reserved seats at Monthly Chamber Luncheons. Learn from Top Business Leaders, Community Leaders and Government Officials.  </p>
+                <button class="levelBtn" onclick="toggleParagraph('myParagraph4')">Gold></button>
+                <p id="myParagraph4" class="hidden">-Sponsorship credit of $1,500 on select events.
+                                            -Executive Round Table Participation (by invitation).
+                                            -​2 Reserved seats at Monthly Chamber Luncheons. Learn from Top Business Leaders and Government Officials.​
+                                            -Logo visibly displayed on all digital and printed materials.
+                                            -Banner recognition with logo prominently displayed at all appropriate chamber events.
+                                            -​6 Reserved seats at the Annual Utah County Business Summit - Multiple Chambers participate.
+                                            ​​-Weekly Foursomes with Carts at both Fox Hollow & TalonsCove Golf Club. Very few Chambers can boast to providing this benefit for their members!  </p>            
                 
             </fieldset>
             <fieldset>
