@@ -18,7 +18,7 @@
 <body>
     <div class="banner">
             <div class="banner-text">🤝🏼 <strong>Come join us</strong> for the chamber meet and greet Wednesday at 7:00 p.m.<button class="banner-close">
-                <span class="material-icon">close</span>
+                <span class="material-icon">✖</span>
             </button></div>
             
     </div>
@@ -57,7 +57,7 @@
 
     </header>
     <main >
-        <h1>Join the Chamber</h1>
+        <h2>Join the Chamber</h1>
         <form method="get" action="thankyou.html">
             <fieldset>
                 <legend>Aplication Information</legend>
@@ -66,7 +66,6 @@
                 <label class="top">Business Position Title (Please enter a valid title with a minimum of seven alpha characters, hyphens, and spaces).<input type="text" name="title" pattern="[A-Za-z\s\-]{7,}"></label>
                 <label class="top">Email* <input type="email" name="email" placeholder="someone@gmail.com" required></label>
                 <label class="top">Phone* <input type="tel" name="phone" placeholder="1235551234" required></label>
-                <label class="top">Business Name <input type="text" name="business"></label>
             </fieldset>
             <fieldset>
                 <legend>Membership Level</legend>
@@ -76,26 +75,26 @@
                 <label class="sbs"><input type="radio" name="level" value="Silver"> Silver</label>
                 <label class="sbs"><input type="radio" name="level" value="Gold"> Gold</label>
                 
-                <h3>Click to see level benefits bellow:</h3>
-                <button class="levelBtn" onclick="toggleParagraph('myParagraph1')">None Profit></button>
+                <h3>Click to see level benefits below:</h3>
+                <button class="levelBtn" onclick="toggleParagraph('myParagraph1')">None Profit</button>
                 <p id="myParagraph1" class="hidden">-Directory listing on Chamber website. - Become publicly visible in the community.
                     -​Attend monthly Chamber luncheons and learn from top business and government officials ($20 cost to cover catering).
                     -Chamber Membership plaque that can be displayed prominently in your place of business.
                     -Grand Opening and Ribbon Cutting Ceremony - We always invite the Mayor!
                     -Special member pricing/discounts for Chamber events and advertising in the Chamber magazine.
                     -Opportunity to participate on Chamber committees. </p>
-                <button class="levelBtn" onclick="toggleParagraph('myParagraph2')">Bronze></button>
+                <button class="levelBtn" onclick="toggleParagraph('myParagraph2')">Bronze</button>
                 <p id="myParagraph2" class="hidden">-1 Reserved seat at Monthly Chamber Luncheons. -Learn from Top Business Leaders, Community Leaders and Government Officials. 
                             -​Monthly Foursomes with Carts and Range Balls at Fox Hollow.
                             -Logo clearly displayed on the directory page of the website.
                             -Company name listed in the footer of the weekly Chamber newsletter email. </p>
-                <button class="levelBtn" onclick="toggleParagraph('myParagraph3')">Silver></button>
+                <button class="levelBtn" onclick="toggleParagraph('myParagraph3')">Silver</button>
                 <p id="myParagraph3" class="hidden">-Sponsorship credit of $500 on select events.
                                     ​-Logo visibly displayed on all digital and printed materials.
                                     -Banner recognition with logo displayed at all appropriate chamber events.
                                     ​-4 reserved seats at the Annual Utah County Business Summit - Multiple Chambers participate.
                                     -2 Reserved seats at Monthly Chamber Luncheons. Learn from Top Business Leaders, Community Leaders and Government Officials.  </p>
-                <button class="levelBtn" onclick="toggleParagraph('myParagraph4')">Gold></button>
+                <button class="levelBtn" onclick="toggleParagraph('myParagraph4')">Gold</button>
                 <p id="myParagraph4" class="hidden">-Sponsorship credit of $1,500 on select events.
                                             -Executive Round Table Participation (by invitation).
                                             -​2 Reserved seats at Monthly Chamber Luncheons. Learn from Top Business Leaders and Government Officials.​
@@ -106,11 +105,12 @@
                 
             </fieldset>
             <fieldset>
+                <label class="top">Business Name <input type="text" name="business"></label>
                 <label class="sbs" for="business-description">Business Description:</label><br>
                 <textarea id="business-description" name="business-description" rows="4" cols="50"></textarea><br>
             </fieldset>
             <input type="hidden" id="dateTime" name="dateTime">
-            <input type="submit" value="Propose my Course" class="submitBtn">
+            <input type="submit" value="Send My Application" class="submitBtn">
         </form>
         
 

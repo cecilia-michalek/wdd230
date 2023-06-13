@@ -37,9 +37,12 @@ body, .banner {
     cursor: pointer;
     padding: 10px;
 }
-.banner-text, .banner-close > span {
+.banner-text {
     color: black;
 
+}
+.banner-close > span {
+    color: red;
 }
 
 /*-------header-------*/
@@ -84,7 +87,7 @@ header {
 /*-------nav-------*/
 nav {
 	margin: 1px auto;
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 /* small view navigation */
@@ -364,28 +367,32 @@ ul {
 /* ----------Form-------------*/
 form fieldset {
     margin: 2rem 0;
-    border: 1px solid black;
+    border: 1px solid #23487B;
     border-radius: 10px;
-    padding: .5rem 2%;
-    background-color: rgb(205, 222, 229);
+    padding: 2px;
+    
+    
 }
 
 form legend {
     color: #23487B;
     margin: 0 1rem;
-    padding: 0 .5rem;
+    padding: .5rem;
+    box-sizing: border-box;
+    border: 2px solid rgb(13, 114, 122);
+    font-size: 1.2rem;
 }
 
 form label.top, form div {
-    display:block;
+    display: block;
     padding-top: 1rem;
     color: #9c2c13;
-    font-size: 1rem;
+    font-size: 1.2rem;
 }
 
 form label.top input, form label.top select {
     display: block;
-    font-size: 1rem;
+    font-size: 1.2rem;
     border: solid 1px #999;
     border-radius: 4px;
     padding: .75rem;
@@ -398,7 +405,8 @@ form label.top input, form label.top select {
 form label.sbs {
     display: block;
     padding: .75rem 0;
-    color: #555;
+    color: #23487B;
+    font-size: 1.2rem;
 }
 
 form input.submitBtn {
@@ -410,6 +418,7 @@ form input.submitBtn {
     margin: 0 0 2rem 2%;
     width: 96%;
     max-width: 20rem;
+    
 }
 
 form label.top input:required {
@@ -430,6 +439,7 @@ form label.top input:required:valid {
     border-radius: 1rem;
     padding: .75rem 1.5rem;
     margin: 0 0 2rem 2%;
+    font-size: 1.2rem;
 }
 
 /*---------Thank you ----------*/
@@ -440,7 +450,8 @@ form label.top input:required:valid {
     height: 20rem;
     margin-top: 10%;
     font-size: larger;
-    color: #23487B
+    color: #23487B;
+    padding: 20px;
 }
 
 /*-------footer------------*/
