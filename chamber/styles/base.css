@@ -164,7 +164,6 @@ ul {
 
 .heroImage img {
     width: 100%;
-    height: 100%;
     object-fit: cover;
     border-radius: 10px;
    
@@ -362,7 +361,7 @@ ul {
     color: white;
 }
 
-/* ----------Join-------------*/
+/* ----------Form-------------*/
 form fieldset {
     margin: 2rem 0;
     border: 1px solid black;

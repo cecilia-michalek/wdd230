@@ -123,4 +123,32 @@ nav ul li a {
     grid-column: 2/3;
     grid-row: 3/4;
 }
+
+/*-----discover------*/
+
+.discoverMain {
+    max-width: 960px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.temple {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    justify-content: center;
+}
+.carnival{
+    grid-column: 2/3;
+    grid-row: 1/2;
+
+}
+.hotSprings {
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+
+.biking {
+    grid-column: 2/3;
+    grid-row: 2/3;
 }
