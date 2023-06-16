@@ -390,6 +390,11 @@ form label.top, form div {
     font-size: 1.2rem;
 }
 
+input[type='radio'] {
+    transform: scale(1.5);
+    width: 40px;
+}
+
 form label.top input, form label.top select {
     display: block;
     font-size: 1.2rem;
@@ -411,7 +416,7 @@ form label.sbs {
 
 form input.submitBtn {
     border: none;
-    background-color: #c25f1d;
+    background-color: #693411;
     color: white;
     border-radius: 1rem;
     padding: .75rem 1.5rem;
@@ -434,7 +439,7 @@ form label.top input:required:valid {
 }
 .levelBtn {
     border: none;
-    background-color: #c25f1d;
+    background-color: #693411;
     color: white;
     border-radius: 1rem;
     padding: .75rem 1.5rem;
@@ -453,6 +458,7 @@ form label.top input:required:valid {
     color: #23487B;
     padding: 20px;
 }
+
 
 /*-------footer------------*/
 
