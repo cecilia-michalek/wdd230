@@ -1,0 +1,59 @@
+{
+    "directory": [
+        {
+         "Name": "Nothing Bundt Cake",
+         "Location": "900 W. 500 N. Saratogs Springs, UT",
+         "PhoneNumber": "(385) 265-2067",
+         "Email": "nothingbundtcakes.com",
+         "imageurl": "#"},
+
+        {
+         "Name": "Central Bank",
+         "Location": "900 W. 500 N. Saratogs Springs, UT",
+         "PhoneNumber": "(385) 265-2067",
+         "Email": "centralbank.com",
+         "imageurl": "#"},
+
+        {"Name": "Quick Quack Car Wash",
+         "Location": "900 W. 500 N. Saratogs Springs, UT",
+         "PhoneNumber": "(385) 265-2067",
+         "Email": "quickquackcarwash.com",
+         "imageurl": "#"},
+
+        {"Name": "Tide Cleaners",
+         "Location": "900 W. 500 N. Saratogs Springs, UT",
+         "PhoneNumber": "(385) 265-2067",
+         "Email": "tidecleaners.com",
+         "imageurl": "#"},
+
+        {"Name": "Tabitha's Way Food Pantry",
+         "Location": "900 W. 500 N. Saratogs Springs, UT",
+         "PhoneNumber": "(385) 265-2067",
+         "Email": "tabithasway.com",
+         "imageurl": "#"},
+
+        {"Name": "Inovation Dance Studio",
+         "Location": "900 W. 500 N. Saratogs Springs, UT",
+         "PhoneNumber": "(385) 265-2067",
+         "Email": "inovationDance.com",
+         "imageurl": "#"},
+
+        {"Name": "FatCats",
+         "Location": "900 W. 500 N. Saratogs Springs, UT",
+         "PhoneNumber": "(385) 265-2067",
+         "Email": "fatcats.com",
+         "imageurl": "#"},
+
+        {"Name": "Peterson Concrete",
+         "Location": "900 W. 500 N. Saratogs Springs, UT",
+         "PhoneNumber": "(385) 265-2067",
+         "Email": "petersonconcrete.com",
+         "imageurl": "#"},
+
+        {"Name": "Saratoga Vision",
+         "Location": "900 W. 500 N. Saratogs Springs, UT",
+         "PhoneNumber": "(385) 265-2067",
+         "Email": "saratogavision.com",
+         "imageurl": "#"}
+    ]
+}
