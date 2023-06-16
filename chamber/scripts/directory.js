@@ -1,4 +1,4 @@
-const url = 'directory.json';
+const url = 'data.json';
 getDirectoryData();
 
 async function getDirectoryData() {
