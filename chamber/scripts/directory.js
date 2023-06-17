@@ -24,13 +24,13 @@ async function getDirectoryData() {
         let email = document.createElement('p');
         let imageurl = document.createElement('img');
     
-        // Build the h2 content out to show the prophet's full name - finish the template string
+        // Build the h2 content out to show the buisiness's name - finish the template string
         name.textContent = `${business.name}`;
         location.innerHTML = `${business.location}`;
         phoneNumber.innerHTML = `${business.phoneNumber}`;
         email.innerHTML = `${business.email}`;
         
-        // Build the image portrait by setting all the relevant attribute
+        // Build the image by setting all the relevant attribute
         imageurl.setAttribute('src', business.imageurl);
         imageurl.setAttribute('alt', `${business.name}`);
         imageurl.setAttribute('loading', 'lazy');
