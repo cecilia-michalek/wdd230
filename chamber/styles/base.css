@@ -525,7 +525,7 @@ div.cards {
 
 
 /* list view */
-div.list section {
+div.list  {
     display: flex;
     flex-direction: column;
     align-items: flex-start;

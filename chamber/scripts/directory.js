@@ -34,8 +34,8 @@ gridbutton.addEventListener("click", () => {
     imageurl.setAttribute('src', directory.imageurl);
     imageurl.setAttribute('alt', `${directory.name}`);
     imageurl.setAttribute('loading', 'lazy');
-    imageurl.setAttribute('width', '340');
-    imageurl.setAttribute('height', '440');
+    imageurl.setAttribute('width', '220');
+    imageurl.setAttribute('height', '320');
 
     // Append the section(card) with the created elements
     card.appendChild(h3);
