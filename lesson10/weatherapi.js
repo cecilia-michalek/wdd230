@@ -29,7 +29,7 @@ async function apiFetch() {
   function  displayResults(weatherData) {
     currentTemp.innerHTML = `<strong>${weatherData.main.temp.toFixed(0)}</strong>`;
   
-    const iconsrc = `https://openweathermap.org/img/w/${weatherData.weather[0].icon}.png`;
+    const iconsrc = `https://openweathermap.org/img/wn/${weatherData.weather[0].icon}@2x.png`;
     const desc = capitalizeFirstLetter(weatherData.weather[0].description);
 
   
