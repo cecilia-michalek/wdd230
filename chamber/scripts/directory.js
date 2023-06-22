@@ -4,11 +4,13 @@ const display = document.querySelector(".cards");
 
 listbutton.addEventListener("click", () => {
   display.classList.add("list");
-})
+  display.classList.remove("grid");
+});
 
 gridbutton.addEventListener("click", () => {
   display.classList.remove("list");
-})
+  display.classList.add("grid");
+});
 
 //Business grid
 
