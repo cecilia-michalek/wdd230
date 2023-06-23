@@ -221,9 +221,9 @@ ul {
     text-align: center;
 }
 
-.weather-icon {
-	color:#FCCA46;
-	font-size: 80px;
+figcaption {
+    font-size: 1.5rem;
+    text-decoration: underline;
 }
 
 .news{

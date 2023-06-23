@@ -79,16 +79,16 @@
             </div>
         <div class="weather">
             <h2 class="h2headings">Weather</h2>
-            <p>Temperature in Saratoga Springs, UT is
-                <span type="text" id="temperature">50</span> &deg;F
+            <p>The current temperature in Saratoga Springs, UT is
+                <span id="current-temp"></span> &deg;F</p>
             </p>
             <figure>
-            <span class='weather-icon'>&#x1F324;</span>
+                <img src="" alt="" id="weather-icon" />
+                <figcaption></figcaption>
             </figure>
-            <figcaption>Mostly Sunny Skies</figcaption>
-            <p>Wind Speed: <span type="text" id="windspeed">25</span> MPH
+            <p>Wind Speed: <span type="text" id="windspeed"></span> mph
             </p>
-            <p>Wind Chill: <span id="windchill">N/A</span></p>
+            <p>Wind Chill: <span id="windchill"></span></p>
         </div>
         <div class="news">
             <h2 class="h2headings">News Release</h2>
@@ -115,6 +115,7 @@
             <p>Need a tree removed?</p>
             <p>Call us: 999-999-9999</p></div>
         </div>
+        <p class="visits1"><span id="numVisits">Number of days since you visited this page: <span class="visits"></span></p>
     </main>
     <footer>
         <div class="footerlogo">
@@ -129,7 +130,7 @@
       <script src="scripts/script.js"></script>
       <script src="scripts/date.js"></script>
       <script src="scripts/banner.js"></script>
-      <script src="scripts/windchill.js"></script>
       <script src="scripts/localStorage.js"></script>
+      <script src="scripts/weather.js"></script>  
 </body>
 </html>
