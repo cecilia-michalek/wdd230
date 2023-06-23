@@ -147,7 +147,7 @@ ul {
 	max-width: 960px;
 	margin: 5px;
     padding: 5px;
-    color: #23487B
+    color: #23487B;
     
 }
 
@@ -356,7 +356,7 @@ figcaption {
 }
 
 .visits1 {
-    background-color: #23487B;
+    background-color: #1e5e76;;
     padding: 8px;
     margin-bottom: 10px;
     display: flex;
