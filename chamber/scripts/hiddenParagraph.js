@@ -7,6 +7,6 @@
     }
   }*/
   function toggleParagraph(paragraphId) {
-    var paragraph = document.getElementById(paragraphId);
+    let paragraph = document.getElementById(paragraphId);
     paragraph.classList.toggle('hidden');
   }

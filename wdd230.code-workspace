@@ -1,0 +1,15 @@
+{
+	"folders": [
+		{
+			"name": "wdd230",
+			"path": "."
+		},
+		{
+			"name": "Form-start",
+			"path": "../Downloads/Form-start"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "wdd230"
+	}
+}
