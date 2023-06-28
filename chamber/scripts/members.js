@@ -4,9 +4,8 @@ fetch('data.json')
   .then(data => {
 
 // Filter members with silver or gold status
-const directoryData = "data.json";
-const filteredMembers = directoryData.members.filter(function(members) {
-    return members.status === "silver" || members.status === "gold";
+const filteredMembers = data.members.filter(function(member) {
+    return member.status === "silver" || member.status === "gold";
   });
   
   // Randomly select two members
@@ -20,18 +19,21 @@ const filteredMembers = directoryData.members.filter(function(members) {
   }
   
   // Display the selected members
-  selectedMembers.forEach(function(members) {
-    console.log("Name: " + members.name);
-    console.log("Status: " + members.status);
+  selectedMembers.forEach(function(member) {
+    console.log("Name: " + member.name);
+    console.log("Status: " + member.status);
     console.log("-----");
   });
-})
 
+//call the displayMember function to render the selected members on the page
+displayMembers(selectedMembers);
+})
+.catch(error => console.error(error));
 
 const displayMembers = (members) => {
   const cards = document.querySelector('div.cards'); // select the output container element
 
-  members.forEach((members) => {
+  members.forEach((member) => {
     // Create elements to add to the div.cards element
     let card = document.createElement('section');
     let h2 = document.createElement('h2');
@@ -41,14 +43,14 @@ const displayMembers = (members) => {
     let logo = document.createElement('img');
 
     // Build the h2 content out to show the prophet's full name - finish the template string
-    h2.textContent = `${members.name}`;
-    location.innerHTML = `${members.location}`;
-    phoneNumber.innerHTML = `${members.phoneNumber}`;
-    email.innerHTML = `${members.email}`;
+    h2.textContent = `${member.name}`;
+    location.innerHTML = `${member.location}`;
+    phoneNumber.innerHTML = `${member.phoneNumber}`;
+    email.innerHTML = `${member.email}`;
     
     // Build the image portrait by setting all the relevant attribute
-    logo.setAttribute('src', members.imageurl);
-    logo.setAttribute('alt', `${members.name}`);
+    logo.setAttribute('src', member.imageurl);
+    logo.setAttribute('alt', `${member.name}`);
     logo.setAttribute('loading', 'lazy');
     logo.setAttribute('width', '340');
     logo.setAttribute('height', '440');

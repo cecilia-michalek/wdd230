@@ -170,6 +170,7 @@ ul {
     padding: 5px;
     color: rgba(0, 0, 0, 0.648);
     
+    
 }
 
 .hero {
@@ -267,18 +268,7 @@ figcaption {
     grid-template-rows: 1fr;
     grid-gap: 1rem;
     text-align: center;
-}
-
-.spot1{
-    grid-row: 1/2;
-    border: 1px solid black;
-}
-.spot2{
-    grid-row: 2/3;
-    border: 1px solid black;
-}
-.spot3 { 
-    display: none;
+    
 }
 
 .h2headings {
@@ -532,7 +522,6 @@ div.cards {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     border:  5px solid rgba(0, 0, 0, 0.1);
     border-radius: 5px;
-  
     margin-bottom: 10px;
     box-shadow:0 0 10px darkgray;
     gap: 20px;
@@ -543,7 +532,7 @@ div.cards {
     padding: 1rem;
     border: 5px solid rgba(0, 0, 0, 0.1);
     color: black;
-    background-color: rgb(199, 217, 220);
+    background-color: rgb(205, 222, 229);
     width: 100%;
     display: flex;
     flex-direction: column;

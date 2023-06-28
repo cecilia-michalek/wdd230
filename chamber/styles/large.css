@@ -79,36 +79,15 @@ nav ul li a {
 }*/
 
 .spotlight{
-    
-    width: 200px;
     height: 1000px;
     border-radius: 10px;
     padding: 1rem;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 2fr 1fr;
     grid-column: 3/4;
     grid-row: 1/4;
     grid-gap: 1rem;
     background-color:rgb(205, 222, 229);
 }
-.spot1{
-    grid-row: 1/2;
-    border: 1px solid black;
-    
-}
-.spot2{
-    height: 320px;
-    grid-row: 2/3;
-    border: 1px solid black;
-    
-}
-.spot3{
-    display: block;
-    grid-row: 3/4;
-    border: 1px solid black;
-    
-}
+
 .weather{
     border-radius: 10px;
     padding: 1rem;
