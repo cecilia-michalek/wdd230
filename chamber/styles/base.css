@@ -94,6 +94,7 @@ nav {
 #hamButton {
 	display: block;
 	position: absolute;
+    cursor: pointer;
 	top: 100px;
 	right: 20px;
 	width: fit-content;
@@ -101,6 +102,24 @@ nav {
 	padding: .5rem;
 	color: rgb(13, 114, 122);
 }
+
+#hamButton :nth-child(1) {
+    display: block;
+}
+
+#hamButton :nth-child(2) {
+    display: none;
+}
+
+#hamButton.open :nth-child(2) {
+    display: block;
+}
+
+#hamButton.open :nth-child(1) {
+    display: none;
+}
+
+
 .navigation {
 	display: flex;
 	flex-direction: column;
@@ -367,10 +386,10 @@ figcaption {
 
 /* ----------Form-------------*/
 form fieldset {
-    margin: 2rem 0;
+    margin: 3rem;
     border: 1px solid #23487B;
     border-radius: 10px;
-    padding: 2px;
+    padding: 4px;
     
     
 }
@@ -378,7 +397,7 @@ form fieldset {
 form legend {
     color: #23487B;
     margin: 0 1rem;
-    padding: .5rem;
+    padding: 1rem;
     box-sizing: border-box;
     border: 2px solid rgb(13, 114, 122);
     font-size: 1.2rem;
@@ -386,7 +405,7 @@ form legend {
 
 form label.top, form div {
     display: block;
-    padding-top: 1rem;
+    padding: 1rem;
     color: #9c2c13;
     font-size: 1.2rem;
 }
@@ -410,7 +429,7 @@ form label.top input, form label.top select {
 
 form label.sbs {
     display: block;
-    padding: .75rem 0;
+    padding: 1rem;
     color: #23487B;
     font-size: 1.2rem;
 }
@@ -438,6 +457,7 @@ form label.top input:required:valid {
 .hidden {
     display: none;
 }
+
 .levelBtn {
     border: none;
     background-color: #693411;
@@ -446,6 +466,10 @@ form label.top input:required:valid {
     padding: .75rem 1.5rem;
     margin: 0 0 2rem 2%;
     font-size: 1.2rem;
+}
+
+#buisness-description {
+   padding: 2; 
 }
 
 /*---------Thank you ----------*/
@@ -549,7 +573,12 @@ div.list section h3 {
 }
 /*------Contact-------*/
 
-
+.contact {
+    background-color: rgb(205, 222, 229);
+    border-radius: 2px;
+    padding: 2rem; 
+     
+}
 
 
 /*-------footer-------*/
@@ -558,7 +587,7 @@ footer {
 	padding: 1rem;
     text-align: center;
 	font-weight: 400;
-    background-color: rgb(61, 156, 162);;
+    background-color: rgb(61, 156, 162);
     color:white;
 }
 .footerlogo {

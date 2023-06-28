@@ -45,7 +45,9 @@
                 </svg></a></div></div>
         <div>
             <nav>
-                <button id="hamButton">&#9776;</button>
+                <button id="hamButton"><span>&#9776;</span>
+                    <span>X</span>
+                </button>
                 <ul class="navigation">
                     <li><a href="index" title="Home">Home</a></li>
                     <li><a href="discover" title="Discover">Discover</a></li>
@@ -56,7 +58,7 @@
             </nav></div>
 
     </header>
-    <p class="visits1"><span id="numVisits">Number of days since you visited this page: <span class="visits"></span></p>
+    <p class="visits1"><span id="numVisits">Number of days since you visited this page:</span><span class="visits"></span></p>
     <main class="content">
         <div class="hero">
             <!--<picture class="wdd230picture">
@@ -82,12 +84,11 @@
             <h2 class="h2headings">Weather</h2>
             <p>The current temperature in Saratoga Springs, UT is
                 <span id="current-temp"></span> &deg;F</p>
-            </p>
             <figure>
-                <img src="" alt="" id="weather-icon" />
+                <img src="path_to_image" alt="" id="weather-icon">
                 <figcaption></figcaption>
             </figure>
-            <p>Wind Speed: <span type="text" id="windspeed"></span> mph
+            <p>Wind Speed: <span id="windspeed"></span> mph
             </p>
             <p>Wind Chill: <span id="windchill"></span></p>
         </div>
@@ -100,11 +101,11 @@
             <p>Discover how to join the chamber of commerce and how it will benefit your organization!</p>
         </div>
         <div class="spotlight">
-            <div class="spot1"><h2 class="h2headings">In need of a dumpster?</h2>
-                <img src="images/DumpTruck.jpg" alt="Dump truck" width="100" height="80">
+            <div class="spot1"><h2 class="h2headings">Sweeties Treats</h2>
+                <img src="https://img.freepik.com/free-vector/greeting-card-template-with-retro-patterns-yellow-polka-dots-pink-stripes-around-round-frame-with-desserts_1284-45900.jpg?size=626&ext=jpg&uid=R106961169&ga=GA1.1.740866325.1686961028&semt=sph" alt="Picture of Cakes and treats" width="100" height="80">
             <p>We got you covered!</p>
             <p>Call us: 999-999-9999</p>
-            <p>trushOnWheel.com</p></div>
+            <p>sweetiescakes.com</p></div>
             
             <div class="spot2"><h2 class="h2headings">Code School</h2>
             <img src="images/laptopImage.png" alt="Cartuned laptop." width="125" height="125">
@@ -121,7 +122,8 @@
         <div class="footerlogo">
             <img src="images/sunset-logo.webp" alt="logo of Saratoga Springs" width="50" height="50">
             <p>Contact Us: Saratoga Springs Chamber- 801-333-3333</p> 
-            <a href="https://www.google.com/maps/place/Saratoga+Springs+City+Hall/@40.3862865,-111.9156431,17z/data=!4m14!1m7!3m6!1s0x874d7e5123b64b5f:0xf271504ba7dcdebf!2sSaratoga+Springs+City+Hall!8m2!3d40.3862824!4d-111.9130682!16s%2Fg%2F1vyxjx05!3m5!1s0x874d7e5123b64b5f:0xf271504ba7dcdebf!8m2!3d40.3862824!4d-111.9130682!16s%2Fg%2F1vyxjx05">Location Map<span>📍</span></a></div>
+            <a href="https://www.google.com/maps/place/Saratoga+Springs+City+Hall/@40.3862865,-111.9156431,17z/data=!4m14!1m7!3m6!1s0x874d7e5123b64b5f:0xf271504ba7dcdebf!2sSaratoga+Springs+City+Hall!8m2!3d40.3862824!4d-111.9130682!16s%2Fg%2F1vyxjx05!3m5!1s0x874d7e5123b64b5f:0xf271504ba7dcdebf!8m2!3d40.3862824!4d-111.9130682!16s%2Fg%2F1vyxjx05">Location Map<span>📍</span></a>
+            <a href="https://openweathermap.org/"><span>OpenWeathermap.org</span></a></div>
         <div class="copyright">
             <p>&copy;<span id="copyrightYear"></span> | Cecilia Michalek | WDD230 Project | Last Updated:<span id="lastUpdated"></span></p>
         </div>

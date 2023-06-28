@@ -152,3 +152,19 @@ nav ul li a {
     grid-column: 2/3;
     grid-row: 2/3;
 }
+
+/*------Contact-------*/
+
+.contact {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: rgb(205, 222, 229);
+    border-radius: 2px;
+    padding: 2rem;    
+}
+.info {
+    justify-items: center;
+}
+.paragraph {
+    padding: 2rem;
+}
