@@ -1,8 +1,8 @@
 function validateTitle() {
-    var titleInput = document.getElementById("title");
-    var titleValue = titleInput.value.trim();
+    let titleInput = document.getElementById("title");
+    let titleValue = titleInput.value.trim();
 
-    var regex = /^[A-Za-z\s\-]{7,}$/;
+    let regex = /^[A-Za-z\s\-]{7,}$/;
     
     if (titleValue === "" || regex.test(titleValue)) {
       // Valid input

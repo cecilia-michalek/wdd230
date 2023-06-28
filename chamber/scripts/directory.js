@@ -64,6 +64,5 @@ async function getDirectoryData() {
   
 }
 
-
 getDirectoryData();
 

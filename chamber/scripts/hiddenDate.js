@@ -1,7 +1,7 @@
 window.addEventListener('DOMContentLoaded', function() {
-    var dateTimeField = document.getElementById('dateTime');
-    var currentDate = new Date();
-    var formattedDate = currentDate.toISOString(); // Convert date to string format
+    let dateTimeField = document.getElementById('dateTime');
+    let currentDate = new Date();
+    let formattedDate = currentDate.toISOString(); // Convert date to string format
 
     dateTimeField.value = formattedDate;
   });
