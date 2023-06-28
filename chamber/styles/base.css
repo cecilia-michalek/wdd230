@@ -76,12 +76,15 @@ header {
 .social {
 	display: flex;
 	gap: 10px;
-    align-self: flex-start;
+    align-self:flex-start;
+    width: 100%;
+    
 }
 
 .social svg {
 	width: 32px;
 	height: auto;
+    
 }
 
 /*-------nav-------*/
@@ -95,8 +98,7 @@ nav {
 	display: block;
 	position: absolute;
     cursor: pointer;
-	top: 100px;
-	right: 20px;
+	right: 10%;
 	width: fit-content;
 	font-size: 1.8rem;
 	padding: .5rem;
@@ -166,7 +168,7 @@ ul {
 	width: 100%;
 	margin: 5px;
     padding: 5px;
-    color: #23487B;
+    color: rgba(0, 0, 0, 0.648);
     
 }
 
@@ -192,21 +194,21 @@ ul {
    
 }
 
-.hero-h2 {
+.hero h2 {
     position: absolute;
-    top: 80px;
-    left: 50px;
+    top: 5%;
+    left: 5%;
     font-size: 1.8rem;
 
 }
 
 .heroJoin {
 	position: absolute;
-	top: 85%;
-	left: 50%;
+	top: 75%;
+	left: 40%;
 	border-radius: 25px;
   	background:  #b98b4a;
-  	padding: 20px;
+  	padding: 10px;
     box-shadow: 0 0 30px #f4eeee;	
 
 }
