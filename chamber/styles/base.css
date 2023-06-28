@@ -52,7 +52,7 @@ header {
 	flex-direction: column;
 	background-color: rgb(61, 156, 162);
 	color:white;
-    max-width: 960px;
+    width: 100%;
     position: relative;
     
 }
@@ -163,7 +163,7 @@ ul {
 	display: grid;
 	grid-template-columns: 1fr;
 	grid-gap: 10px;
-	max-width: 960px;
+	width: 100%;
 	margin: 5px;
     padding: 5px;
     color: #23487B;
@@ -291,7 +291,7 @@ figcaption {
     display: none;
  }
 
-/*Dicovery Page*/
+/*---Dicovery Page----*/
 
 .discoverMain {
     margin: 10px auto;
@@ -390,6 +390,7 @@ form fieldset {
     border: 1px solid #23487B;
     border-radius: 10px;
     padding: 4px;
+    width: 100%;
     
     
 }
@@ -432,6 +433,7 @@ form label.sbs {
     padding: 1rem;
     color: #23487B;
     font-size: 1.2rem;
+    width: 100%;
 }
 
 form input.submitBtn {
@@ -469,7 +471,8 @@ form label.top input:required:valid {
 }
 
 #buisness-description {
-   padding: 2; 
+   padding: 2px; 
+   width: 100%;
 }
 
 /*---------Thank you ----------*/
@@ -578,6 +581,18 @@ div.list section h3 {
     border-radius: 2px;
     padding: 2rem; 
      
+}
+.contact img{
+    width: 100%;
+}
+
+textarea {
+    padding: 2rem;
+    margin: 2rem;
+}
+.paragraph {
+    width: 100%;
+    margin: 2rem;
 }
 
 
