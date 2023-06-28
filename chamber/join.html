@@ -30,6 +30,8 @@
         <div class="headings">
         <h1>Saratoga Springs City Chamber of Commerce</h1>
         <span id="date2"></span></div>
+        <button id="hamButton"><span>&#9776;</span>
+            <span>X</span></button>
         <div class="social">
             <a href="https://facebook.com"><svg enable-background="new 0 0 32 32" height="32" id="Layer_1" version="1.0" viewBox="0 0 32 32" width="32" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                     <g>
@@ -45,7 +47,6 @@
                 </svg></a></div></div>
         <div>
             <nav>
-                <button id="hamButton">&#9776;</button>
                 <ul class="navigation">
                     <li><a href="index" title="Home">Home</a></li>
                     <li><a href="discover" title="Discover">Discover</a></li>
@@ -57,7 +58,7 @@
 
     </header>
     <main >
-        <h2>Join the Chamber</h1>
+        <h2 class="joinh2">Join the Chamber</h2>
         <form method="get" action="thankyou.html">
             <fieldset>
                 <legend>Aplication Information</legend>
@@ -106,11 +107,12 @@
             </fieldset>
             <fieldset>
                 <label class="top">Business Name <input type="text" name="business"></label>
-                <label class="sbs" for="business-description">Business Description:</label><br>
-                <textarea id="business-description" name="business-description" rows="4" cols="50"></textarea><br>
+                <label class="top" for="business-description">Business Description:</label>
+                <textarea id="business-description" name="business-description" rows="4" cols="50"></textarea>
+                <input type="hidden" id="dateTime" name="dateTime">
+                <input type="submit" value="Send My Application" class="submitBtn">
             </fieldset>
-            <input type="hidden" id="dateTime" name="dateTime">
-            <input type="submit" value="Send My Application" class="submitBtn">
+            
         </form>
         
 

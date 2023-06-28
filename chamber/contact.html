@@ -30,6 +30,8 @@
         <div class="headings">
         <h1>Saratoga Springs City Chamber of Commerce</h1>
         <span id="date2"></span></div>
+        <button id="hamButton"><span>&#9776;</span>
+            <span>X</span></button>
         <div class="social">
             <a href="https://facebook.com"><svg enable-background="new 0 0 32 32" height="32" id="Layer_1" version="1.0" viewBox="0 0 32 32" width="32" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                     <g>
@@ -45,7 +47,6 @@
                 </svg></a></div></div>
         <div>
             <nav>
-                <button id="hamButton">&#9776;</button>
                 <ul class="navigation">
                     <li><a href="index" title="Home">Home</a></li>
                     <li><a href="discover" title="Discover">Discover</a></li>
@@ -54,6 +55,7 @@
                     <li><a href="contact" title="Contact">Contact</a></li>
                 </ul>
             </nav></div>
+
     </header>
     <main>
     <div class="contact">
@@ -79,10 +81,11 @@
             </fieldset>
             <fieldset>
                 
-                <label class="sbs" for="business-description">What questions do you have for Us?</label><br>
+                <label class="top" for="business-description">What questions do you have for Us?</label><br>
                 <textarea id="business-description" name="business-description" rows="4" cols="50"></textarea><br>
+                <input type="submit" value="Send Us a Message" class="submitBtn">
             </fieldset>
-            <input type="submit" value="Send Us a Message" class="submitBtn">
+            
         </form>
     </div>
     </main>
