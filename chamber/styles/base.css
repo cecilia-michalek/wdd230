@@ -50,7 +50,7 @@ body, .banner {
 header {
 	display: flex;
 	flex-direction: column;
-	background-color: rgb(61, 156, 162);
+	background-color: #29666B;
 	color:white;
     width: 100%;
     position: relative;
@@ -610,7 +610,7 @@ footer {
 	padding: 1rem;
     text-align: center;
 	font-weight: 400;
-    background-color: rgb(61, 156, 162);
+    background-color: #29666B;
     color:white;
 }
 .footerlogo {
