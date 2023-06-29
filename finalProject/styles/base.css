@@ -1,0 +1,236 @@
+body {
+	max-width: 960px;
+    margin: 0 auto;
+	padding: 0;
+	font-size: 16px;
+	font-family: 'caveat', Montserrat;
+    box-sizing: border-box;
+   
+}
+
+/*-----Header----*/
+
+header {
+	display: flex;
+	background-color: rgb(187, 174, 148);
+	color:rgb(155, 75, 46);
+    width: 100%;
+    position: relative;
+    
+}
+
+.logo {
+	display: flex;
+    margin: 15px;
+    justify-content: center;
+    align-items: center;       
+}
+
+.headings {
+	font-size: 1rem;
+	padding: 1rem;
+}
+
+/*----Social Media----*/
+
+.social {
+	display: flex;
+	gap: 10px;
+    align-self:flex-start;
+    
+    
+}
+
+.social svg {
+	width: 32px;
+	height: auto;
+    
+}
+/*------Nav------*/
+
+nav {
+	margin: 1px auto;
+    font-size: 1.5rem;
+}
+
+/* small view navigation */
+#hamButton {
+	display: block;
+	position: absolute;
+    cursor: pointer;
+	right: 5%;
+	width: fit-content;
+	font-size: 1.8rem;
+	padding: .5rem;
+}
+
+#hamButton :nth-child(1) {
+    display: block;
+}
+
+#hamButton :nth-child(2) {
+    display: none;
+}
+
+#hamButton.open :nth-child(2) {
+    display: block;
+}
+
+#hamButton.open :nth-child(1) {
+    display: none;
+}
+
+
+.navigation {
+	display: flex;
+	flex-direction: column;
+	list-style: none;
+	background-color: #b98b4a;
+	
+}
+ul {
+	margin-block-start: 0;
+	padding-inline-start: 0;
+}
+.navigation li {
+    display: none;
+}
+.navigation li a {
+	padding: 1.15rem;
+	display: block;
+	text-align: center;
+	text-decoration: none;
+	color:#333;
+}
+.navigation li:hover {
+	background-color:#FCCA46;
+	color: #333;
+	font-weight: 700;
+}
+
+/* when the button is clicked - the responsive class is added and accounted for here */
+.responsive li {
+	display: block;
+	width: 100%;
+}
+.responsive li a {
+	display: block;
+}
+
+/*------Main------*/
+
+.content {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 10px;
+	width: 100%;
+	margin: 5px;
+    padding: 5px;
+    color: rgba(0, 0, 0, 0.648);
+   
+}
+
+* {
+    box-sizing: border-box;
+  }
+
+h2.drinks {
+    text-align: center;
+    margin: 1rem;
+    font-size: 2rem;
+    color:#b7700d;
+}
+
+div.drinks-button {
+    display: flex;
+    margin: 1rem auto;
+    justify-content: center;
+}
+
+div.drinks-button button {
+    border: 2px solid black;
+    background-color: #b98b4a;
+    padding: .50rem;
+    margin: .50rem;
+    box-shadow: 1px 1px 3px #555;
+    border-radius: 8px;
+    width: fit-content;
+    height: fit-content;
+}
+
+div.drinks-button button:hover {
+    border: 2px solid #23487B ;
+}
+
+
+div.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    border:  5px solid rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    margin-bottom: 10px;
+    box-shadow:0 0 10px darkgray;
+    gap: 20px;
+    
+  }
+
+  div.cards section {
+    padding: 1rem;
+    border: 5px solid rgba(0, 0, 0, 0.1);
+    color: black;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+  }
+
+ div.cards section img {
+    width: 120px;
+    height: auto;
+    border: 1px solid #fff;
+    box-shadow: 0 0 20px #fff;
+    margin-top: 1rem;
+  }
+
+
+
+/* list view */
+div.list  {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    box-shadow: none;
+    margin: 0;
+    padding: .5rem;
+}
+
+div.list section:nth-child(odd) {
+    background-color: whitesmoke;
+}
+
+div.list section img {
+    display: none;
+}
+
+div.list section h3 {
+    font-size: 1.2rem;
+    
+}
+
+.weather{
+    border-radius: 10px;
+    padding: 1rem;
+    grid-column: 1/2;
+    grid-row: 3/4;
+    text-align: center;
+    box-shadow:0 0 10px darkgray;
+}
+
+.join{
+    border-radius: 10px;
+    padding: 1rem;
+    grid-column: 1/2;
+    grid-row: 5/6;
+    box-shadow:0 0 10px darkgray;
+}
