@@ -3,4 +3,6 @@ const navigation = document.querySelector('.navigation');
 
 hamButton.addEventListener('click', () => {
 	navigation.classList.toggle('responsive');
+	document.querySelector("#open").classList.toggle('active')
+	document.querySelector("#close").classList.toggle('active')
 });

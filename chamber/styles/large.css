@@ -87,6 +87,13 @@ nav ul li a {
     grid-gap: 1rem;
     background-color:rgb(205, 222, 229);
 }
+.cards {
+    height: 100%;
+}
+.spotlight .cards section:nth-child(3) {
+    display: block;
+
+}
 
 .weather{
     border-radius: 10px;

@@ -10,7 +10,7 @@ const filteredMembers = data.members.filter(function(member) {
   
   // Randomly select two members
   let selectedMembers = [];
-  let numMembersToDisplay = Math.min(2, filteredMembers.length);
+  let numMembersToDisplay = Math.min(3, filteredMembers.length);
   
   for (let i = 0; i < numMembersToDisplay; i++) {
     let randomIndex = Math.floor(Math.random() * filteredMembers.length);

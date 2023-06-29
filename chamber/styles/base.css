@@ -104,23 +104,20 @@ nav {
 	padding: .5rem;
 	color: rgb(13, 114, 122);
 }
-
-#hamButton :nth-child(1) {
-    display: block;
-}
-
-#hamButton :nth-child(2) {
+#open {
     display: none;
 }
 
-#hamButton.open :nth-child(2) {
-    display: block;
-}
-
-#hamButton.open :nth-child(1) {
+#close {
     display: none;
 }
 
+#open.active {
+    display: block;
+}
+#close.active {
+    display: block;
+}
 
 .navigation {
 	display: flex;
@@ -269,6 +266,14 @@ figcaption {
     grid-gap: 1rem;
     text-align: center;
     
+}
+.spotlight h2, p {
+    margin: 0;
+}
+
+.spotlight .cards section:nth-child(3) {
+    display: none;
+
 }
 
 .h2headings {
