@@ -441,9 +441,9 @@ form label.sbs {
 }
 
 form input.submitBtn {
-    border: none;
-    background-color: #693411;
-    color: white;
+    border:#29666B;
+    background-color: #b98b4a;
+    color: black;
     border-radius: 1rem;
     padding: .75rem 1.5rem;
     margin: 1rem 0 2rem 2%;
@@ -466,8 +466,8 @@ form label.top input:required:valid {
 
 .levelBtn {
     border: none;
-    background-color: #693411;
-    color: white;
+    background-color: #b98b4a;
+    color: black;
     border-radius: 1rem;
     padding: .75rem 1.5rem;
     margin: 0 0 2rem 2%;
