@@ -555,7 +555,7 @@ div.cards {
 
 
 
-/* list view */
+/*---- list view---- */
 div.list  {
     display: flex;
     flex-direction: column;
@@ -587,6 +587,8 @@ div.list section h3 {
 }
 .contact img{
     width: 100%;
+    border-radius: 300px;
+
 }
 .info {
     align-content: center;
