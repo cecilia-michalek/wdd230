@@ -1,0 +1,151 @@
+
+
+body {
+    margin: 0;
+	padding: 0;
+	font-size: 16px;
+	font-family: 'Caveat', cursive;
+    box-sizing: border-box;
+}
+
+header {
+	background-color: #b4d1cc;
+	display: flex;
+	flex-flow: column;
+    color:white;
+	align-items: center;
+	justify-content: center;
+	padding: 10px;
+}
+
+h1 {
+	font-size: 2rem;
+    text-align: center;
+    color: #320E3B;
+}
+h2 {
+	padding: .5rem;
+    margin: 2rem 0 0 2rem;
+	color: #092f49;
+}
+
+p {
+	padding: .5rem;
+}
+h3 {
+    padding: .5rem;
+	color: #092f49;
+}
+
+nav {
+	background-color: #320E3B;
+	text-align: center;
+	box-shadow: 0 0 30px #333;
+	display: flex;
+	flex-direction: row;
+}
+
+nav div {
+	flex: 1 1 auto;
+    
+}
+
+nav a {
+	display: block;
+	color: #dfc21e;
+	text-align: center;
+	padding: 15px;
+	text-decoration: none;
+	font-size: 0.9rem;
+}
+
+nav a:hover {
+	background-color: #AF1B3F;
+	color: white;
+}
+
+main {
+	display: grid;
+	grid-template-columns: 1fr;
+	align-items: center;
+	justify-content: center;
+	font-size: 0.85rem;
+    background-color: #eee;
+}
+
+main .content {
+	margin: 1rem;
+	padding: 1rem;
+
+}
+
+img {
+    padding: 2rem;
+
+}
+
+header, nav, main, footer {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.ColoredParagraph {
+    background-color:#320E3B;
+    color:white;
+
+}
+
+
+
+.colors {
+    display: flex;
+    flex-wrap: wrap;
+    border-collapse: separate;
+    border-spacing: 2px;
+    text-align: center;
+}
+
+.Primary {
+    background-color: #E1C38E;
+    margin: 10px;
+    padding: 20px;
+    color: white
+}
+
+.Secondary {
+    background-color: #0F8B8D;
+    margin: 10px;
+    padding: 20px;
+    color: white
+}
+
+.Accent1 {
+    background-color: #AF1B3F;
+    margin: 10px;
+    padding: 20px;
+    color: white
+}
+
+.Accent2 {
+    background-color: #320E3B;
+    margin: 10px;
+    padding: 20px;
+    color: white
+}
+
+#personas {
+    display:flex;
+    flex-direction: column;
+
+
+
+}
+
+footer {
+	padding: 1rem;
+	justify-content: center;
+    text-align: center;
+	font-weight: 400;
+    background-color: #b4d1cc;
+    color:#320E3B;
+}

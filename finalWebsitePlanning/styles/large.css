@@ -1,0 +1,10 @@
+@media screen and (min-width: 60rem) {
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    h2 {
+        padding: 10rem;
+        font-size: 2rem;
+    }
