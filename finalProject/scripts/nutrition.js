@@ -50,3 +50,14 @@ fetch(fruitDataUrl)
   .catch(error => {
     console.error("Error fetching or parsing the fruits data:", error);
   });
+
+  function calculateTotalNutrition(fruits, nutrient, fruitNutritionData) {
+    let total = 0;
+    for (const fruit of fruits) {
+      const fruitData = fruitNutritionData.find(item => item.name === fruit);
+      if (fruitData) {
+        total += fruitData[nutrient];
+      }
+    }
+    return total;
+  }

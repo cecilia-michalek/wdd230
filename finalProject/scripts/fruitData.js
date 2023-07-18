@@ -34,7 +34,7 @@ form.addEventListener('submit', function(event) {
   const fruit1 = document.getElementById('fruit1').value;
   const fruit2 = document.getElementById('fruit2').value;
   const fruit3 = document.getElementById('fruit3').value;
-  const instructions = document.getElementById('instructions').value;
+  const instructions = document.getElementById('specialInstructions').value;
 
   // Perform any necessary form validation or further processing
   // ...
