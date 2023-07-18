@@ -22,46 +22,55 @@ const parseWeather = function (weatherText) {
     let weatherJSON = JSON.parse(weatherText);
 
     // Extract the necessary weather information from weatherJSON object
-    let temperature = weatherJSON.main.temp.toFixed(0);
-    let description = weatherJSON.weather[0].description;
-    let icon = weatherJSON.weather[0].icon;
+    let forecastList = weatherJSON.list;
+    let forecastData = [];
+
+    for (let i = 0; i < forecastList.length; i++) {
+      let forecast = forecastList[i];
+      let temperature = forecast.main.temp.toFixed(0);
+      let description = forecast.weather[0].description;
+      let icon = forecast.weather[0].icon;
+      let humidity = forecast.main.humidity;
+      forecastData.push({ temperature, description, icon, humidity });
+    }
 
     // Display the weather information
-    displayWeather(temperature, description, icon);
+    displayWeather(forecastData);
   } catch (error) {
     console.error("Error parsing weather data:", error);
   }
 };
 
-let displayWeather = function (temperature, description, icon) {
-  let out = `<div class="weatherInfo"><img src="http://openweathermap.org/img/wn/${icon}.png"/>`;
-  out += `<h2>${temperature}F</h2>`;
-  out += `<h3>${description}</h3>`;
+let displayWeather = function (forecastData) {
+  let out = '';
+
+  for (let i = 0; i < forecastData.length; i++) {
+    let forecast = forecastData[i];
+    let dayIndex = CheckDay(i);
+    let dayOfWeek = getDayOfWeek(dayIndex);
+    out += `<h2>${dayOfWeek}</h2></div>`;
+    out += `<div class="weatherInfo"><img src="http://openweathermap.org/img/wn/${forecast.icon}.png"/>`;
+    out += `<h3>${forecast.description}</h3>`;
+    out += `<h3>${forecast.temperature}F</h3>`;
+    out += `<h3>${forecast.humidity}%</h3>`;
+    
+    
+    
+  }
+
   document.getElementById("forecast").innerHTML = out;
 };
 
-
-/*let getDayOfWeek = function (dayNum) {
-  let weekday = new Array(7);
-  weekday[0] = "Sunday";
-  weekday[1] = "Monday";
-  weekday[2] = "Tuesday";
-  weekday[3] = "Wednesday";
-  weekday[4] = "Thursday";
-  weekday[5] = "Friday";
-  weekday[6] = "Saturday";
-
+const getDayOfWeek = function (dayNum) {
+  const weekday = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
   return weekday[dayNum];
-};*/
+};
 
-const getDayOfWeek = new Date();
-const weekday = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
-
-function CheckDay(day) {
-    return (day + getDayOfWeek.getDay()) % 7;
-}
+const CheckDay = function (day) {
+  const today = new Date().getDay();
+  return (today + day) % 7;
+};
 
 for (let i = 0; i < 3; i++) {
-    document.getElementById("day" + (i + 1)).innerHTML = weekday[CheckDay(i)];
-  }
-  
+  document.getElementById("day" + (i + 1)).innerHTML = getDayOfWeek(CheckDay(i));
+}

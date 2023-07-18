@@ -1,7 +1,7 @@
 // select HTML elements in the document
-const currentTemp = document.querySelector('#current-temp');
-const weatherIcon = document.querySelector('#weather-icon');
-const humidity = document.querySelector('#humidity')
+const currentTemp = document.querySelector('.current-temp');
+const weatherIcon = document.querySelector('.weather-icon');
+const humidity = document.querySelector('.humidity')
 const condition = document.querySelector('figcaption');
 
 const url = 'https://api.openweathermap.org/data/2.5/forecast?lat=33&lon=-117&units=imperial&cnt=3&appid=73e2b28753da83c109ebf8af22ca15b3';
