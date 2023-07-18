@@ -60,4 +60,4 @@ fetch(fruitDataUrl)
       }
     }
     return total;
-  }
+}
