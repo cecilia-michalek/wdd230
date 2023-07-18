@@ -40,4 +40,13 @@
         border-right: 1px solid black;
         color: yellow;
         }
+
+        .create {
+            grid-column: 1/2;
+            grid-row: 5/6;
+            font-size: 2rem;
+          }
+          .createbtn {
+            top: 60%;
+            left: 60%;   
     }   

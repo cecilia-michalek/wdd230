@@ -31,7 +31,8 @@ const parseWeather = function (weatherText) {
       let description = forecast.weather[0].description;
       let icon = forecast.weather[0].icon;
       let humidity = forecast.main.humidity;
-      forecastData.push({ temperature, description, icon, humidity });
+      let dayOfWeek = getDayOfWeek(CheckDay(i));
+      forecastData.push({ dayOfWeek, temperature, description, icon, humidity });
     }
 
     // Display the weather information
@@ -46,16 +47,13 @@ let displayWeather = function (forecastData) {
 
   for (let i = 0; i < forecastData.length; i++) {
     let forecast = forecastData[i];
-    let dayIndex = CheckDay(i);
-    let dayOfWeek = getDayOfWeek(dayIndex);
-    out += `<h2>${dayOfWeek}</h2></div>`;
-    out += `<div class="weatherInfo"><img src="http://openweathermap.org/img/wn/${forecast.icon}.png"/>`;
+    out += `<div class="weatherInfo">`;
+    out += `<h2>${forecast.dayOfWeek}</h2>`;
+    out += `<img src="http://openweathermap.org/img/wn/${forecast.icon}.png"/>`;
     out += `<h3>${forecast.description}</h3>`;
     out += `<h3>${forecast.temperature}F</h3>`;
-    out += `<h3>${forecast.humidity}%</h3>`;
-    
-    
-    
+    out += `<h3>Humidity: ${forecast.humidity}%</h3>`;
+    out += `</div>`;
   }
 
   document.getElementById("forecast").innerHTML = out;

@@ -20,17 +20,9 @@ header {
 
 .logo {
   display: flex;
-  margin: 15px;
-  justify-content: center;
+  margin: 8px;
+  justify-content: left;
   align-items: center;
-}
-#date2 {
-  display: block;
-}
-
-.headings {
-  font-size: 1rem;
-  padding: 1rem;
 }
 
 /*----Social Media----*/
@@ -38,7 +30,7 @@ header {
 .social {
   display: flex;
   gap: 10px;
-  align-self: flex-start;
+  align-self: flex-end;
 }
 
 .social svg {
@@ -59,9 +51,11 @@ nav {
   position: absolute;
   cursor: pointer;
   right: 5%;
+  top: 5%;
   width: fit-content;
   font-size: 1.8rem;
   padding: 0.5rem;
+
 }
 
 #open {
@@ -170,16 +164,21 @@ ul {
 .create {
   border-radius: 10px;
   padding: 1rem;
-  grid-column: 1/2;
-  grid-row: 5/6;
   box-shadow: 0 0 10px darkgray;
+  font-size: 1.5rem;
 }
 
 /*Weather*/
+#forecast {
+  position: relative;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 5px;
+}
 .weatherInfo {
   margin-bottom: 20px;
   padding: 10px;
-  border: 1px solid #ccc;
+  border: 5px solid rosybrown;
 }
 .weatherInfo img {
   width: 50px;
@@ -189,36 +188,7 @@ ul {
   margin: 0;
   padding: 0;
 }
-/*#forecast {
-  position: relative;
-  border: 5px solid rosybrown;
-  border-radius: 10px;
-  margin: 10px;
-  padding: 5px;
-}
-.weatherInfo {
-  position: relative;
-  border: 5px solid rosybrown;
-  border-radius: 10px;
-}
-.icons {
-  display: inline-block;
-  margin: 20px;
-  border: 5px solid rosybrown;
-  border-radius: 10px;
-}
-.image {
-  height: auto;
-}
-.weather {
-  text-align: center;
-  font-weight: bold;
-}
 
-.values {
-  text-align: center;
-  display: inline-block;
-}
 /*Address*/
 
 .address {
