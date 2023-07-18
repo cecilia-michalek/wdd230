@@ -478,6 +478,10 @@ textarea {
     padding: 1rem;
     width: 100%;
 }
+/*----About Us------*/
+.about {
+    position: absolute;
+}
 
 /*---------Thank you ----------*/
 

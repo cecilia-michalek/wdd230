@@ -3,24 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description" content="Bountiful Foods, we are fresh organic, locally grown foods. Located in Carlsbad, California. Come enjoy our fresh fruits and produce and specialty drinks.">
+    <title>Bountiful Foods, locally grown, organic foods.</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=Montserrat:wght@500&display=swap" rel="stylesheet">
 
+    <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
 </head>
 <body>
     <header>
-        <div class="logo">
+    <div class="logo">
+        <a href="index.html"></a>
         <picture class="logo">
-            <img src="images/Fresh Fruit illustration Food Logo.webp" alt="logo" width="80" height="80">
-        </picture></div>
+            <img src="images/BountifulFoodsLogo.webp" alt="logo" width="80" height="80">
+        </picture>
         <div class="headings">
-        <h1>Fresh Food and Drinks right from our farms</h1>
+        <a href="index.html"></a>
+        <h1>Bountiful Foods</h1>
         <span id="date2"></span></div>
-        <button id="hamButton"><span>&#9776;</span>
-            <span>X</span></button>
+        <button id="hamButton"><span id="open" class="active">&#9776;</span>
+            <span id="close">X</span></button>
         <div class="social">
             <a href="https://facebook.com"><svg enable-background="new 0 0 32 32" height="32" id="Layer_1" version="1.0" viewBox="0 0 32 32" width="32" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                     <g>
@@ -28,62 +34,135 @@
                         <path d="M22,32V20h4l1-5h-5v-2c0-2,1.002-3,3-3h2V5c-1,0-2.24,0-4,0c-3.675,0-6,2.881-6,7v3h-4v5h4v12H22z" fill="#FFFFFF" id="f" />
                     </g>
                 </svg></a>
-            <a href="https://twitter.com"><svg height="32" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" version="1.1" viewBox="0 0 512 512" width="32" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                    <g>
-                        <path d="M448,512l-384,0c-35.328,0 -64,-28.672 -64,-64l0,-384c0,-35.328 28.672,-64 64,-64l384,0c35.328,0 64,28.672 64,64l0,384c0,35.328 -28.672,64 -64,64Z" id="Dark_Blue" style="fill:#1da1f2;fill-rule:nonzero;" />
-                        <path d="M196.608,386.048c120.704,0 186.752,-100.096 186.752,-186.752c0,-2.816 0,-5.632 -0.128,-8.448c12.8,-9.216 23.936,-20.864 32.768,-34.048c-11.776,5.248 -24.448,8.704 -37.76,10.368c13.568,-8.064 23.936,-20.992 28.928,-36.352c-12.672,7.552 -26.752,12.928 -41.728,15.872c-12.032,-12.8 -29.056,-20.736 -47.872,-20.736c-36.224,0 -65.664,29.44 -65.664,65.664c0,5.12 0.64,10.112 1.664,14.976c-54.528,-2.688 -102.912,-28.928 -135.296,-68.608c-5.632,9.728 -8.832,20.992 -8.832,33.024c0,22.784 11.648,42.88 29.184,54.656c-10.752,-0.384 -20.864,-3.328 -29.696,-8.192l0,0.896c0,31.744 22.656,58.368 52.608,64.384c-5.504,1.536 -11.264,2.304 -17.28,2.304c-4.224,0 -8.32,-0.384 -12.288,-1.152c8.32,26.112 32.64,45.056 61.312,45.568c-22.528,17.664 -50.816,28.16 -81.536,28.16c-5.248,0 -10.496,-0.256 -15.616,-0.896c28.928,18.432 63.488,29.312 100.48,29.312" id="Logo__x2014__FIXED" style="fill:#fff;fill-rule:nonzero;" />
-                    </g>
-                </svg></a>
-            <a href="https://pinterest.com">
-                    <svg enable-background="new 0 0 24 24" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M12,0C5.37,0,0,5.37,0,12c0,5.32,4.34,9.63,9.66,9.63c4.68,0,7.81-3.52,7.81-7.41c0-2.32-1.56-4.84-4.39-4.84c-3.41,0-5.42,2.57-5.42,5.22c0,1.03,0.31,1.75,0.79,2.28l1.13,1.21c0.23,0.24,0.35,0.55,0.24,0.87c-0.12,0.39-0.49,0.62-0.88,0.62 c-0.08,0-0.16-0.01-0.24-0.04l-1.49-0.49c-1.21-0.39-1.77-1.63-1.77-3.03c0-2.45,1.97-5.45,5.84-5.45c3.1,0,5.05,2.28,5.05,4.79 c0,3.44-1.52,6.41-3.79,6.41c-1.26,0-2.19-1.05-1.88-2.32l0.44-1.76c0.12-0.47-0.16-0.94-0.63-1.07c-0.11-0.03-0.22-0.04-0.33-0.04 c-0.72,0-1.32,0.62-1.32,1.49c0,1.12,0.95,2.45,2.83,2.45c1.12,0,1.96-0.79,1.96-1.85C20.63,16.32,18.26,14,15,14 c-3.45,0-6.02,2.95-6.02,6.11c0,2.16,1.57,3.85,3.89,3.85c1.94,0,3.37-1.62,3.37-3.75c0-1.16-0.47-1.94-0.47-1.94 s0.97-4.12,0.97-6.27C15.65,3.4,13.52,0,10.1,0C4.58,0,0,4.58,0,10.19C0,15.58,4.34,24,12,24c6.26,0,12-7.47,12-13.63 C24,5.07,18.25,0,12,0z" fill="#C8232C"/>
-                    </svg></a>
-            </div>
+                        <a href="https://twitter.com"><svg height="32" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" version="1.1" viewBox="0 0 512 512" width="32" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <g>
+                                <path d="M448,512l-384,0c-35.328,0 -64,-28.672 -64,-64l0,-384c0,-35.328 28.672,-64 64,-64l384,0c35.328,0 64,28.672 64,64l0,384c0,35.328 -28.672,64 -64,64Z" id="Dark_Blue" style="fill:#1da1f2;fill-rule:nonzero;" />
+                                <path d="M196.608,386.048c120.704,0 186.752,-100.096 186.752,-186.752c0,-2.816 0,-5.632 -0.128,-8.448c12.8,-9.216 23.936,-20.864 32.768,-34.048c-11.776,5.248 -24.448,8.704 -37.76,10.368c13.568,-8.064 23.936,-20.992 28.928,-36.352c-12.672,7.552 -26.752,12.928 -41.728,15.872c-12.032,-12.8 -29.056,-20.736 -47.872,-20.736c-36.224,0 -65.664,29.44 -65.664,65.664c0,5.12 0.64,10.112 1.664,14.976c-54.528,-2.688 -102.912,-28.928 -135.296,-68.608c-5.632,9.728 -8.832,20.992 -8.832,33.024c0,22.784 11.648,42.88 29.184,54.656c-10.752,-0.384 -20.864,-3.328 -29.696,-8.192l0,0.896c0,31.744 22.656,58.368 52.608,64.384c-5.504,1.536 -11.264,2.304 -17.28,2.304c-4.224,0 -8.32,-0.384 -12.288,-1.152c8.32,26.112 32.64,45.056 61.312,45.568c-22.528,17.664 -50.816,28.16 -81.536,28.16c-5.248,0 -10.496,-0.256 -15.616,-0.896c28.928,18.432 63.488,29.312 100.48,29.312" id="Logo__x2014__FIXED" style="fill:#fff;fill-rule:nonzero;" />
+                            </g>
+                        </svg></a>
+                        <a href="https://pinterest.com">
+                            <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M12 2C6.486 2 2 6.486 2 12c0 5.514 4.486 10 10 10s10-4.486 10-10c0-5.514-4.486-10-10-10zm2.276 9.97c.092.218.03.472-.156.656l-1.78 1.777 1.762 2.825c.1.176.12.388.052.583-.063.196-.21.346-.408.395l-2.975.603c-.56.114-.695.438-.337.869l.625.776c.38.473.524.856.57 1.348.064.781.06.81-.746.81h-4.59c-.594 0-.74-.028-.678-.81.046-.492.189-.875.57-1.348l.625-.776c.358-.431.223-.755-.337-.869l-2.975-.603c-.198-.05-.345-.199-.408-.395-.068-.195-.048-.407.052-.583l1.762-2.825-1.78-1.777c-.187-.184-.248-.438-.156-.656.104-.246.36-.383.645-.383h4.953c.244 0 .469-.165.528-.404.056-.238-.103-.502-.36-.573l-4.26-1.017c-.54-.135-.593-.605-.063-.83l3.395-1.33c.283-.11.433-.452.324-.75-.13-.356-.481-.489-.797-.276l-4.305 2.093c-.76.368-1.045 1.23-.644 1.899l.683 1.278-1.452 4.513c-.24.754.369 1.47 1.146 1.47h5.168c.71 0 1.294-.584 1.294-1.294v-5.55c-.003-.282.15-.437.383-.437h1.637c.283 0 .507.224.507.507v4.593c0 .654-.53 1.184-1.184 1.184h-3.502z"/>
+                            </svg>
+                          </a>
+                          
+                          
+                    </div></div>
         <div>
             <nav>
                 <ul class="navigation">
-                    <li><a href="index" title="Home">Home</a></li>
-                    <li><a href="fresh" title="Fresh">Directory</a></li>
-                    <li><a href="contact" title="Contact">Contact</a></li>
+                    <li><a href="index" title="Home">HOME</a></li>
+                    <li><a href="fresh" title="Fresh">FRESH</a></li>
+                    <li><a href="contact" title="Contact">ABOUT US</a></li>
                 </ul>
             </nav></div>
 
-
     </header>
     <main class="content">
-        <div>
-            <h2 class="drinks">Try Our Amezing Fresh Fruit Bowls and  Fruit Drinks</h2>
-            <div class="drinks-button">
-                <button id="grid">Recipe Cards</button>
-               
-                <button id="list">Recipe List</button>
-               
+        <div class="image-container">
+            <div class="create"> 
+            <h2>Try some of our specialty fruit drinks or create your own</h2>
+            <img src="images/drink.jpg" alt="drink" loading="lazy" width="960" height="600">
+                <a class="createbtn" href="fresh">Make Your Own</a>
+                <p>Choose from our wonderful variety of fresh fruits and produce, and make your own fresh Juice! click here to make your own recipe.</p>
             </div>
-            <div class="cards"></div>
-
         </div>
-        <div class="weather">
-            <h2 class="h2headings">Weather</h2>
-            <p>The current temperature in Carlsbad, CA is
-                <span id="current-temp"></span> &deg;F</p>
+        <!--
+        <div>
+            <div class="card">
+                <figure>Today in Carsbad, CA
+                    <img id="weatherCurrent-icon" src="http://openweathermap.org/img/wn/10d@4x.png" alt="weather icon">
+                    <figcaption></figcaption>
+                    </figure>     
+            <p><strong>Temperature:</strong> <span class="current-temp"></span>&deg;F<br></p>
+            <p><strong>Condition:</strong> <span class="condition"></span><br></p>
+            <p><strong>Humidity:</strong> <span class="humidity"></span>%<br></p>
+        </div>
+            <div class="card1">
             <figure>
-                <img src="" alt="" id="weather-icon">
-                <figcaption></figcaption>
+                <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" id="weather1-icon">
+              
             </figure>
-            <p>Wind Speed: <span id="windspeed"></span> mph
-            </p>
-            <p>Wind Chill: <span id="windchill"></span></p>
-        </div>
-        <div class="join">
-            <a class="joinbtn" href="fresh">Make Your Own</a>
-            <p>Choose from our wonderful variety of fresh fruits and vegietables and make your own fresh Juice! click here to make your own recipe.</p>
-        </div>
+            <p><span class="current-temp"></span>&deg;F<br></p>
+        
+            <figure>
+            <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" id="weather2-icon">
+            
+            </figure>
+            <p></strong> <span class="current-temp"></span>&deg;F<br></p>
+            
+            
+                <figure>
+                    <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" id="weather3-icon">
+                    
+                </figure>
+                <p> <span class="current-temp"></span>&deg;F<br></p>
+                
+                </div></div>-->
 
+                    <div id="forecast"></div>
+                    
+                    <div id="Weather">
+                        <h2 id="Para1">4-Day Weather Forecast</h2>
+                        <h2 id="cityName">Carlsbad, California</h2>
+                        <div id="weatherInfo">
+                            <div class="icons">
+                                <div class="weather">
+                                    <h2 class="h2headings">Today</h2>
+        
+                                        <span id="current-temp"></span> &deg;F</p>
+                                    <figure>
+                                        <img src="https://openweathermap.org/img/wn/04n@2x.png" alt="clouds" id="weather-icon">
+                                        <figcaption></figcaption>
+                                    </figure>
+                                    <p>Humidity: <span id="humidity"></span> %
+                                    </p>
+                                   
+                                </div>
+                                </div>
+                            <div class="icons">
+                                <p class="weather" id="day2"></p>
+                                <div class="image"><img src="https://openweathermap.org/img/wn/04n@2x.png" class="imgClass" id="img2" alt="Weather icon"></div>
+                                <p class="value" id="day2Temp">Loading....</p>
+                                </div>
+                            <div class="icons">
+                                <p class="weather" id="day3"></p>
+                                <div class="image"><img src="https://openweathermap.org/img/wn/04n@2x.png" class="imgClass" id="img3" alt="Weather icon"></div>
+                                <p class="value" id="day3Temp">Loading....</p>
+                                </div>
+                            <div class="icons">
+                                <p class="weather" id="day4"></p>
+                                <div class="image"><img src="https://openweathermap.org/img/wn/04n@2x.png" class="imgClass" id="img4" alt="Weather icon"></div>
+                                <p class="value" id="day4Temp">Loading....</p>
+                                </div>
+                        </div>
+                    </div>
+                                       
+                    
+                    
+                <div class="locations">
+                    <img src="images/beach.jpg" alt="beach">
+                    <h2 class="address">Come and See Us at our 2 main Locations in Southern California:</h2>
+                    <h3 >Carlsbad Store, 6450 Carlsbad blvd, Carlsbad, CA / 760-602-0800</h3>
+                    <h3 >Coronado Beach, 1415 Orange Ave, Coronado, CA / 877-681-4170</h3>
+                    <h3>Coming Soon: Del Mar Store, 1660 Coast Blvd, Del Mar, CA 92014 / 619-221-4170 </h3>
+                </div>
+        </div>
     </main>
     <footer>
-
+        <div class="footerlogo">
+            <img src="images/BountifulFoodsLogo.webp" alt="logo of Bountiful Foods" width="50" height="50">
+            <p>Contact Us: Bountiful Foods- 801-333-3333</p> 
+            <a href="https://www.google.com/maps/place/Carlsbad,+CA/@33.1281164,-117.2411324,12z/data=!4m6!3m5!1s0x80dc73453f3bee59:0xa4cb5592fcf65d2f!8m2!3d33.1580933!4d-117.3505939!16zL20vMHI0d24?entry=ttu">Location Map<span>📍</span></a>
+            <a href="https://openweathermap.org/"><span>OpenWeathermap.org</span></a></div>
+        <div class="copyright">
+            <p>&copy;<span id="copyrightYear"></span> | Cecilia Michalek | WDD230 FinalProject</span></p>
+        </div>
     </footer>
-    <script src="scripts/drinkList.js"></script>
+    <script src="scripts/imageContainer.js"></script>
+    <script src="scripts/hamButton.js"></script>
     <script src="scripts/weather.js"></script>
+   
+    
 </body>
 </html>

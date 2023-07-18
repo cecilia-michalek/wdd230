@@ -3,38 +3,37 @@
     {
      "name": "Stawberry Limeade",
      "ingrediants": "Lime Juice, Fresh Sliced Strowberries, Mint leaves",
-     "imageurl": "images/strawberryLime.jpg"
+     "image": "images/srawberryLime.jpg"
      },
 
     {
      "name": "Spinach Pineapple Juice",
      "ingrediants": "Fresh Pineapples, Lemon Juice, fresh Spinach leaves",
-     "imageurl": "images/spinach.jpg"
+     "image": "images/spinach.jpg"
      },
 
     {"name": "Straberry Acai Bowl",
     "ingrediants": "Fresh Stawberries and Acai berries mixed with homemade yogurt",
-     "imageurl": "images/"
+     "image": "images/Acaibowl.jpg"
      },
 
     {"name": "Mango Lassi",
     "ingrediants": "Fresh Mangos, creek yogurt, and local honey",
-     "imageurl": "images/mangoLassi.jpg"
+     "image": "images/mangoLassi.jpg"
      },
 
     {"name": "Fresh Toamtoe and Lime Juice",
     "ingrediants": "Fresh Tomatoes and lime Juice",
-     "imageurl": "images/tomatoJuice.jpg"
+     "image": "images/tomatoJuice.jpg"
      },
 
     {"name": "Watermelon Lemonade",
     "ingrediants": "Watermenlo, fresh lemons and a hint of mint",
-     "imageurl": "images/watermelon.jpg"
+     "image": "images/watermelon.jpg"
      },
 
     {"name": "Fresh Blueberry granola Bowl",
     "ingrediants": "Fresh Blueberries, homemade granola in a cup of merengue cream",
-     "imageurl": "https://img.freepik.com/free-vector/cinematograph-concept-background-design-with-popcorn-3d-glasses_260559-142.jpg?size=626&ext=jpg&uid=R106961169&ga=GA1.2.740866325.1686961028&semt=ais"
-     }
+     "image": "images/blueBerry.jpg"}
     ]
 }

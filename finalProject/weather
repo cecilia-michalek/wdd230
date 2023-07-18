@@ -1,0 +1,30 @@
+<center>
+<h2 id="Para1">3-Day Weather Forecast</h2>
+<h2 id="cityName">Carlsbad, California</h2>
+</center>
+<div id="weatherContainer">
+    <div id="iconsContainer">
+        <div class="icons">
+            <p class="weather" id="day1"></p>
+            <div class="image"><img src="https://openweathermap.org/img/wn/04n@2x.png" class="imgClass" id="img1" alt="Weather icon"></div>
+            <p class="value" id="day1Temp">Loading....</p>
+            </div>
+        <div class="icons">
+            <p class="weather" id="day2"></p>
+            <div class="image"><img src="https://openweathermap.org/img/wn/04n@2x.png" class="imgClass" id="img2" alt="Weather icon"></div>
+            <p class="value" id="day2Temp">Loading....</p>
+            </div>
+        <div class="icons">
+            <p class="weather" id="day3"></p>
+            <div class="image"><img src="https://openweathermap.org/img/wn/04n@2x.png" class="imgClass" id="img3" alt="Weather icon"></div>
+            <p class="value" id="day3Temp">Loading....</p>
+            </div>
+        <div class="icons">
+            <p class="weather" id="day4"></p>
+            <div class="image"><img src="https://openweathermap.org/img/wn/04n@2x.png" class="imgClass" id="img4" alt="Weather icon"></div>
+            <p class="value" id="day4Temp">Loading....</p>
+            </div>
+    </div>
+</div>
+                    
+

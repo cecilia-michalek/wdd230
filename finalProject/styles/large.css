@@ -1,0 +1,43 @@
+@media screen and (min-width: 60rem) {
+
+    header {
+        max-width: 960px;
+        position: relative;
+    }
+    
+    /*-------nav-------*/
+    #hamButton { display: none; }
+        
+    nav ul li a {
+        padding: .5rem 1rem;
+        justify-content: center;
+    
+        }
+    
+    nav ul #responsive {
+        display: flex;
+        margin-left: 2vw;
+        border-left: 1px solid black;
+        }
+    
+    nav li {
+        display: block;
+        flex: 1 1 100%;
+    
+        }
+    
+    .navigation {
+        flex-direction: row;
+        }
+    
+    .navigation li {
+        display: block;
+        flex: 1 1 auto;
+        }
+    
+    nav ul li a {
+        border: none;
+        border-right: 1px solid black;
+        color: yellow;
+        }
+    
