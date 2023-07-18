@@ -1,4 +1,4 @@
-const fruitDataUrl = 'https://brotherblazzard.github.io/canvas-content/fruit.json';
+//const fruitDataUrl = 'https://brotherblazzard.github.io/canvas-content/fruit.json';
 
 // Fetch and parse the fruits.json file
 fetch(fruitDataUrl)
@@ -21,11 +21,11 @@ fetch(fruitDataUrl)
       const specialInstructions = document.getElementById("specialInstructions").value;
 
       // Calculate total nutrition based on selected fruits...
-      const totalCarbs = calculateTotalNutrition([fruit1, fruit2, fruit3], "carbs");
-      const totalProtein = calculateTotalNutrition([fruit1, fruit2, fruit3], "protein");
-      const totalFat = calculateTotalNutrition([fruit1, fruit2, fruit3], "fat");
-      const totalSugar = calculateTotalNutrition([fruit1, fruit2, fruit3], "sugar");
-      const totalCalories = calculateTotalNutrition([fruit1, fruit2, fruit3], "calories");
+      const totalCarbs = calculateTotalNutrition([fruit1, fruit2, fruit3], "carbs", fruitNutritionData);
+      const totalProtein = calculateTotalNutrition([fruit1, fruit2, fruit3], "protein", fruitNutritionData);
+      const totalFat = calculateTotalNutrition([fruit1, fruit2, fruit3], "fat", fruitNutritionData);
+      const totalSugar = calculateTotalNutrition([fruit1, fruit2, fruit3], "sugar", fruitNutritionData);
+      const totalCalories = calculateTotalNutrition([fruit1, fruit2, fruit3], "calories", fruitNutritionData);
 
       // Prepare the formatted output...
       const formattedOutput = `
@@ -61,3 +61,5 @@ fetch(fruitDataUrl)
     }
     return total;
 }
+
+
