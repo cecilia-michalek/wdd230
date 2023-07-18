@@ -1,4 +1,4 @@
-//const fruitDataUrl = 'https://brotherblazzard.github.io/canvas-content/fruit.json';
+const fruitDataUrl = 'https://brotherblazzard.github.io/canvas-content/fruit.json';
 
 // Fetch and parse the fruits.json file
 fetch(fruitDataUrl)
