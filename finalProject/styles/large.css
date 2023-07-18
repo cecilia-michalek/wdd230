@@ -1,7 +1,7 @@
 @media screen and (min-width: 60rem) {
 
     header {
-        max-width: 960px;
+        max-width: 1000px;
         position: relative;
     }
     
@@ -50,3 +50,13 @@
             top: 60%;
             left: 60%;   
     }   
+    /*Weather*/
+#forecast {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    position: relative;
+    gap: 2px;
+  }
+  
+  
+  
