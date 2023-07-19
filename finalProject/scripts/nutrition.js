@@ -1,31 +1,32 @@
-//const fruitDataUrl = 'https://brotherblazzard.github.io/canvas-content/fruit.json';
+const fruitDataUrl = 'https://brotherblazzard.github.io/canvas-content/fruit.json';
 
-// Fetch and parse the fruits.json file
+// Fetch fruit data from the JSON source
 fetch(fruitDataUrl)
   .then(response => response.json())
   .then(data => {
-    const fruitNutritionData = data;
-    populateSelectElements(fruitNutritionData);
+    const fruitOptions = data;
+    populateSelectElements(fruitOptions);
 
-    // Add event listener to the form, calculate total nutrition, and display output
-    document.getElementById("orderForm").addEventListener("submit", function(event) {
-      event.preventDefault(); // Prevent form submission and page reload
+    // Handle form submission
+    const form = document.getElementById('orderForm');
+    const outputArea = document.getElementById('outputArea');
+    form.addEventListener('submit', function(event) {
+      event.preventDefault();
 
-      // Get input values from the form...
-      const firstName = document.getElementById("fName").value;
-      const email = document.getElementById("email").value;
-      const phone = document.getElementById("phone").value;
-      const fruit1 = document.getElementById("fruit1").value;
-      const fruit2 = document.getElementById("fruit2").value;
-      const fruit3 = document.getElementById("fruit3").value;
-      const specialInstructions = document.getElementById("specialInstructions").value;
+      const firstName = document.getElementById('fName').value;
+      const email = document.getElementById('email').value;
+      const phone = document.getElementById('phone').value;
+      const fruit1 = document.getElementById('fruit1').value;
+      const fruit2 = document.getElementById('fruit2').value;
+      const fruit3 = document.getElementById('fruit3').value;
+      const specialInstructions = document.getElementById('specialInstructions').value;
 
       // Calculate total nutrition based on selected fruits...
-      const totalCarbs = calculateTotalNutrition([fruit1, fruit2, fruit3], "carbs", fruitNutritionData);
-      const totalProtein = calculateTotalNutrition([fruit1, fruit2, fruit3], "protein", fruitNutritionData);
-      const totalFat = calculateTotalNutrition([fruit1, fruit2, fruit3], "fat", fruitNutritionData);
-      const totalSugar = calculateTotalNutrition([fruit1, fruit2, fruit3], "sugar", fruitNutritionData);
-      const totalCalories = calculateTotalNutrition([fruit1, fruit2, fruit3], "calories", fruitNutritionData);
+      const totalCarbs = calculateTotalNutrition([fruit1, fruit2, fruit3], "carbohydrates", fruitOptions);
+      const totalProtein = calculateTotalNutrition([fruit1, fruit2, fruit3], "protein", fruitOptions);
+      const totalFat = calculateTotalNutrition([fruit1, fruit2, fruit3], "fat", fruitOptions);
+      const totalSugar = calculateTotalNutrition([fruit1, fruit2, fruit3], "sugar", fruitOptions);
+      const totalCalories = calculateTotalNutrition([fruit1, fruit2, fruit3], "calories", fruitOptions);
 
       // Prepare the formatted output...
       const formattedOutput = `
@@ -44,22 +45,37 @@ fetch(fruitDataUrl)
       `;
 
       // Display the formatted output in the output area...
-      document.getElementById("outputArea").innerHTML = formattedOutput;
+      outputArea.innerHTML = formattedOutput;
+      outputArea.style.display = 'block';
+
+      // Reset the form
+      form.reset();
     });
   })
   .catch(error => {
-    console.error("Error fetching or parsing the fruits data:", error);
+    console.error('Error fetching fruit data:', error);
   });
 
-  function calculateTotalNutrition(fruits, nutrient, fruitNutritionData) {
-    let total = 0;
-    for (const fruit of fruits) {
-      const fruitData = fruitNutritionData.find(item => item.name === fruit);
-      if (fruitData) {
-        total += fruitData[nutrient];
-      }
-    }
-    return total;
+function populateSelectElements(fruitOptions) {
+  const selectElements = document.querySelectorAll('select[id^="fruit"]');
+  
+  selectElements.forEach(select => {
+    fruitOptions.forEach(fruit => {
+      const option = document.createElement('option');
+      option.value = fruit.name;
+      option.text = fruit.name;
+      select.appendChild(option);
+    });
+  });
 }
 
-
+function calculateTotalNutrition(fruits, nutrient, fruitOptions) {
+  let total = 0;
+  for (const fruit of fruits) {
+    const fruitData = fruitOptions.find(item => item.name === fruit);
+    if (fruitData && fruitData.nutritions && fruitData.nutritions[nutrient]) {
+      total += fruitData.nutritions[nutrient];
+    }
+  }
+  return total;
+}
