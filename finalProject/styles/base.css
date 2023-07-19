@@ -364,28 +364,16 @@ div.cards section {
 
 }
 
-/* list view 
-div.list  {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    box-shadow: none;
-    margin: 0;
-    padding: .5rem;
+.drink1 {
+  background-color: #e1c38e;
+  padding: 8px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  font-size: 1.2rem;
 }
-
-div.list section:nth-child(odd) {
-    background-color: whitesmoke;
-}
-
-div.list section img {
-    display: none;
-}
-
-div.list section h3 {
-    font-size: 1.2rem;
-    
-}*/
 
 /*-------footer-------*/
 
